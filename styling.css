@@ -1,0 +1,1107 @@
+
+head, section, footer, nav, figure, figcaption {display: block;}
+body 
+	{
+		font-family:  'ZCOOL XiaoWei', serif;
+		line-height: 1em;
+		font-size: 1em;
+	}
+head
+	{
+		width:1200px; 
+		margin: 20px; 
+	}
+#wrapper
+	{
+		width:1200px;  
+	}
+	
+														/*/////////NAV/////////*/
+#indexnav nav
+	{
+		margin-top:80px;
+	}
+nav
+	{
+		font-family:  'ZCOOL XiaoWei', serif;
+		position: absolute;
+		left: 25px;
+		top: 355px;  
+		background-image:#94A295;
+		border-radius:10px;
+		opacity:.8;
+	}
+
+nav ul 
+	{
+		padding: 5px 5px 5px 10px;
+	}
+nav li 
+	{  
+		display: inline;
+		margin-right: 5px; 
+		margin-left:5px; 
+		margin-bottom:10px;
+		padding-left:5px; 
+		padding-right:5px;
+		padding-bottom:10px;
+		font-size: 1.5em; 
+	}
+nav a:link 
+	{
+		text-decoration: none; 
+		color:white;
+	}
+nav a:hover
+	{
+		color:blue;
+	}
+a:visited 
+	{
+		color:white;
+	}
+
+														/* /////  index.php /////  */
+
+#treearmsimg
+	{
+		height:600px;		
+	}
+#title
+	{
+		color:#F1FBFD;
+		font-size:2em;
+		position:absolute; 
+		top:100px;
+		left:85px;
+		background:#357582;
+		border-radius:10px;
+		opacity:.7;
+		width:850px;
+		text-align:center;
+	}
+#clouds
+	{
+		background-image:  url("images/dragoncloudbackground.jpg");
+		background-position:center;
+		background-repeat:no-repeat;
+	    width:1200px;
+		height:795px;	
+		position:absolute; 
+		top:285px;    
+		margin-bottom:20px;
+		z-index:-1;
+		
+	}
+#welcome
+	{
+		color:black;
+		width:400px;
+		line-height:1.5em;
+		font-size:1.1em;
+		position:absolute;
+		top:490px;     
+		left:30px;  
+		text-align:LEFT;
+	}
+#welcome1
+	{
+		margin-top:40px;
+		width:600px;
+		
+	}
+#welcome3
+	{
+		margin-right:10px;
+	}
+#originaltree
+	{
+		height:148px; 
+		width:200px; 
+		border: 1px solid black;
+	}
+#welcome4
+	{
+		width:500px; 
+		position:relative;
+		top:-170px;
+		left:220px;
+	}
+#welcome5
+	{
+		position:relative;
+		top:-120px;
+		width:600px;
+	}
+.slider
+	{
+		width:300px;
+		position:absolute; 
+		left:800px; 
+		top:620px; 
+		
+	}
+#indexfooter
+	{
+		margin-top:460px;
+	}
+
+
+												
+															/*///////donna//////*/
+
+#donna
+	{
+		background-color:#5B7F6A;
+		font-family: 'ZCOOL XiaoWei', serif;
+		font-size:1.2em;
+		color:black;
+		width:844px;
+		height:366px;
+		line-height:2em;
+		float:left;
+		padding:10px;
+		
+	}
+#donnaImg
+	{
+		float:right;
+	}
+															/*/////portfolio  //////*/
+
+.slider2
+	{
+		width:390px;
+		height:440px;
+		position:absolute;
+		left:100px; 
+		top:500px;  
+		color:white;
+	}
+.slider3
+	{
+		width:400px;
+		height:500px;
+		position:absolute;
+		left:660px; 
+		top:500px;  
+		color:white;
+	}
+.slider4
+	{
+		width:400px;
+		height:500px;
+		position:absolute;
+		left:100px; 
+		top:1040px; 
+		color:black; 
+	}
+.slider5
+	{
+		width:400px;
+		height:500px;
+		position:absolute;
+		left:660px; 
+		top:1040px; 
+		color:black;  
+	}
+.slider6
+	{
+		width:400px;
+		height:500px;
+		position:absolute;
+		left:100px; 
+		top:1450px; 
+		color:black;  
+	}
+.slider7
+	{
+		width:400px;
+		height:500px;
+		position:absolute;
+		left:660px; 
+		top:1450px; 
+		color:black;  
+	}
+.slider8
+	{
+		width:400px;
+		height:500px;
+		position:absolute;
+		left:450px; 
+		top:1970px; 
+		color:black;  
+	}
+
+.slider2.slick-dots
+	{
+		position: absolute;
+		bottom: 10px;
+		display: block;
+		width: 100%;
+		padding: 0;
+		list-style: none;
+		text-align: center;
+	}
+.slider3.slick-dots
+	{
+		position: absolute;
+		bottom: 70px;
+		display: block;
+		width: 100%;
+		padding: 0;
+		list-style: none;
+		text-align: center;
+	}
+.slider4.slick-dots
+	{
+		position: absolute;
+		top:-50px;
+		display: block;
+		width: 100%;
+		padding: 0;  border:1px solid black;
+		list-style: none;
+		text-align: center;
+	}
+.slider5.slick-dots
+	{
+		position: absolute;
+		bottom: 50px;
+		display: block;
+		width: 100%;
+		padding: 0;
+		list-style: none;
+		text-align: center;
+	}
+.slider6.slick-dots
+	{
+		position: absolute;
+		bottom: 0px;
+		display: block;
+		width: 100%;
+		padding: 0;
+		list-style: none;
+		text-align: center;
+	}
+.slider7.slick-dots
+	{
+		position: absolute;
+		bottom: 50px;
+		display: block;
+		width: 100%;
+		padding:0;
+		list-style: none;
+		text-align: center;
+	}
+
+#portfolioImg
+	{
+		height:392px; 
+	}
+
+#portfoliosliders
+	{
+		background-color:#0C1F28;  
+		height:1900px; 
+		margin-top:-45px;
+		padding-top:40px;
+		padding-left:50px; 
+	}
+#slider2title
+	{
+		position:absolute;
+		top:450px;
+		left:180px;
+		color:white;
+	}
+#slider3title
+	{
+		width:270px;
+		position:absolute;
+		top:450px;
+		left:770px; 
+		color:white;
+	}
+#slider4title
+	{
+		width:400px;
+		position:absolute;
+		top:975px;
+		left:180px; 
+		color:white;
+	}
+#slider5title
+	{
+		width:400px;
+		position:absolute;
+		top:975px;
+		left:730px;
+		color:white;
+	}
+#slider6title
+	{
+		width:475px;
+		position:absolute;
+		top:1390px;
+		left:185px; 
+		color:white;
+	}
+#slider7title
+	{
+		width:280px;
+		position:absolute;
+		top:1390px;
+		left:740px; 
+		color:white;
+	}
+#slider8title
+	{
+		width:380px;
+		position:absolute;
+		top:1820px;
+		left:440px; 
+		color:white;
+	}
+        
+
+
+													/*/////// nature facts /////////*/
+
+/*#oldoaktreeImg
+	{	
+		background-image: url("images/trees/oldoaktree.jpg");
+		margin-left:100px;
+		margin-top:90px;
+		width:300px; 
+		border: 1px solid gray;
+		border-radius:10px; 
+		height:285px;
+		font-family: 'Kalam', cursive;
+		max-width:100%;
+	}
+#oaktreesP
+	{
+		width:600px;
+		line-height:1.5em;
+	    margin-left:600px;
+		margin-top:-340px;
+		font-family: 'Kalam', cursive;
+	}
+#oaktreeh1
+	{
+		margin-left: 120px;
+		width: 240px;
+		color:#323EA6
+	}
+#cloudImg
+	{	
+		background-image: url("images/cloud.jpg");
+		margin-left:100px;
+		margin-top:10px;
+		margin-bottom:10px;
+		width:300px; 
+		border: 1px solid gray;
+		border-radius:10px; 
+		height:285px;
+	}
+#cloudsh1
+	{
+		margin-left: 120px;
+		width: 240px;
+		color:#323EA6
+	}
+#cloudsP
+	{
+		width:600px;
+		line-height:1.5em;
+	    margin-left:600px;
+		margin-top:-350px;
+		color:black;
+		font-family: 'Kalam', cursive;
+		
+	}
+#shadowImg
+	{	
+		background-image: url("images/shadow.jpg");
+		margin-left:100px;
+		margin-top:140px;
+		margin-bottom:10px;
+		width:300px; 
+		border: 1px solid gray;
+		border-radius:10px; 
+		height:285px;
+	}
+#shadowsP
+	{
+		width:600px;
+		line-height:1.5em;
+	    margin-left:600px;
+		margin-top:-320px;
+		color:black;
+		font-family: 'Kalam', cursive;
+		
+	}
+#shadowsh1
+	{
+		margin-left: 120px;
+		width: 240px;
+		color:#323EA6
+	}
+#snowImg
+	{	
+		background-image: url("images/mountains/snowshoe.jpg");
+		margin-left:100px;
+		margin-top:160px;
+		margin-bottom:40px;
+		width:300px; 
+		border: 1px solid gray;
+		border-radius:10px; 
+		height:285px;
+	}
+#snowh1
+	{
+		margin-left: 120px;
+		width: 240px;
+		color:#323EA6;
+	}
+#snowP
+	{
+		width:600px;
+		line-height:1.5em;
+	    margin-left:600px;
+		margin-top:-420px;
+		color:black;
+		font-family: 'Kalam', cursive;
+		
+	}
+#naturefacts
+	{
+		color:black;
+		font-size:1.2em;
+	}
+*/
+	
+													/*///////creative stories////////*/
+#stories
+	{
+		background-color:#14402B;
+		font-size:2em; 
+		height:350px;
+	}
+#wendylink
+	{
+		width:300px; 
+		float:left;
+		margin-top:30px;
+		margin-left:90px;
+		
+	}
+#baileylink
+	{
+		width:300px;
+		float:right; 
+		margin-top:100px;
+		margin-right:90px;
+		 
+	}
+#mushroomlink
+	{
+		width:300px;
+		float:right; 
+		margin-top:30px;
+		margin-right:60px;
+		
+	}
+#stories a:link
+	{
+		color:black;
+	}
+#stories a:hover
+	{
+		color:white;
+	}
+#storiesnav
+	{
+		position:relative;
+		top:-420px;
+	}
+
+												/*///////hiking  ///////*/
+
+#hiking
+	{
+		background-color:#D9E1E7;
+		font-family: 'ZCOOL XiaoWei', serif;
+		font-size:1em;
+		color:black;
+		width:589px;
+		height:610px;
+		line-height:1.5em;
+		padding:10px;
+		float:left; 
+		
+	}
+#hikingimg
+	{
+		position:relative;
+		top:-10px;
+		left:0px;
+		margin-bottom:-10px;
+	}
+#hikingnav
+	{
+		position:relative;
+		top:-453px;
+		left:-10px;
+		width:1300px;
+	}
+#hikes
+	{
+		width: 591px;
+		height:630px;
+		float:right;
+		background-color:#D9E1E7;
+		overflow:scroll;
+	}
+#hikingfooter
+	{
+		height:200px;
+		
+	}
+
+/*more hiking style formatting below under readerspages. */
+
+
+
+
+														/*///////   readerhikes  ///////*/
+#readerhike
+	{
+		background-color:#D9E1E7;
+		position:relative;
+		top:-10px;
+		font-family: 'ZCOOL XiaoWei', serif;
+		font-size:1em;
+		color:black;
+		width:1140px;
+		height:auto;
+		line-height:1.5em;
+		padding:30px;
+		float:left;
+		margin-bottom:-10px;
+	}
+#hikesimg
+	{
+		
+	}	
+
+
+														/*//////  wendy  /////*/ 
+
+#wendyPage
+	{
+		background-color:#F9F9DC; 
+		width:1180px;
+		padding:10px; 
+	}
+
+#greenlakeImg
+	{
+		width:1200px;
+		height:387px;
+		margin-bottom:10px;
+	}
+#wendystory
+	{
+		 
+		color:#006837;
+		line-height:1.5em;
+		font-size:1.2em;
+		width: 575px;
+		margin-left:350px;  
+		margin-top:-330px;
+		float:right;
+		padding:10 10 10 10px;   
+	}
+#wendyfullpage
+	{
+		
+		color:#006837;
+		line-height:1.5em;
+		font-size:1.2em;
+		width: 1190px;
+		margin-top:0px;
+		float:left;
+	}
+#wendyImg
+	{
+		width:300px; 
+		margin-top:100px;
+		margin-left:50px;
+	}
+#turtleimg
+	{
+		width:350px;
+		float:right;
+		position: relative;
+		top: -50px;
+	}
+#rainierImg
+	{
+		width:350px;
+		float:right;
+	}
+#birdflowerImg
+	{
+		width:350px;
+		float:left; 
+	}
+#waterfallImg
+	{
+		width:400px;
+		float:right;
+	}
+#submissions
+	{
+		color: #003C00;
+	}
+
+
+
+												/*///////////Mushrooms Story///////*/
+#mushroomPage		
+	{
+		background-color:#F9F9DC; 
+		width:1180px;
+		padding:10px; 
+	}
+#mushroomImg
+	{
+		width:225px; 
+		margin-top:120px;
+		margin-left:30px; 
+	}	
+#fredfungiImg
+	{
+		width:400px;
+		float:right;
+		margin-right:60px;
+	}
+#mushroomstory
+	{
+		 
+		color:#411D07;
+		line-height:1.5em;
+		font-size:1.2em;
+		width: 675px;
+		margin-left:320px;  
+		margin-top:-330px;
+		float:left;
+		padding:10 10 10 10px;   
+	}
+#mushroomstory1
+	{
+		
+		color:#411D07;
+		line-height:1.5em;
+		font-size:1.2em;
+		width: 675px;
+		margin-left:0px;  
+		margin-top:-20px;
+		float:left;
+		padding:10 10 10 10px;   
+	}
+#mushroomstory2
+	{
+		 
+		color:#411D07;
+		line-height:1.5em;
+		font-size:1.2em;
+		width:1055px;
+		margin-left:0px;  
+		margin-top:-20px;
+		float:left;
+		padding:10 10 10 10px;   
+	}
+
+											  /*////////Bailey Story//////*/
+#baileypage
+	{
+		background-color:#F9F9DC; 
+		width:1180px;
+		padding:10px; 
+	}
+#baileystory
+	{
+		 
+		color:#2A352C;
+		line-height:1.5em;
+		font-size:1.2em;
+		width: 700px;
+		margin-left:350px;  
+		margin-top:-270px;
+		float:right;
+		padding:10 10 10 10px;   
+	}
+#fenceimg	
+	{
+		width:400px;
+		float:left;
+		margin-left:40px;
+		margin-top:45px; border:1px solid black;
+	}
+#baileyfullpage
+	{
+		float:left;
+		margin-left:-400px;
+	}
+
+
+
+											/*////// readers pages //////  */
+
+
+#readersPage
+	{
+		
+		color:#003C00;
+		margin-top:20px; 
+	}
+.readersPageP
+	{
+		margin-left:20px;
+		text-align:center;
+		font-size:1.2em;
+	}
+#readersPageForm
+	{
+		margin-top:50px;
+		float:left;
+		width:500px;
+		height:500px;
+		margin-left:40px; 
+		text-align:left;
+		padding:20px; 
+	}
+#readerssubmissions
+	{
+		width:500px;
+		float:right;  
+		text-align:center;
+		margin-top:50px;
+	}	
+#name, #postTitle, #postContent, #readersemail
+	{
+		background-color:#003C00;
+		color:white;
+	}
+#hiking #name, #postContent
+	{
+		background-color:white;
+		color:black;
+		/*this is here to prevent green backgrounds in the form in hikers pages*/
+	}
+#readersnav
+	{
+		position:relative;
+		top:-430px;
+	}
+.error
+	{
+		
+		color:red;
+		width:500px;
+	}
+
+.slider9.slick-dots
+	{
+		position: absolute;
+		bottom: 50px;
+		display: block;
+		width: 100%;
+		padding:10px;
+		list-style: square;
+		text-align: center;
+	}
+.slider9
+	{
+		width:300px;
+		height:400px;
+		position:absolute;
+		left:740px; 
+		top:740px; 
+		color:black;  
+		text-align:left;
+	}
+#slider9title
+	{
+		margin-left:-130px; 
+		width:600px;
+	}	
+													/*//////evas form/////// */
+#evasForm
+	{
+		
+	}
+#portfolioform
+	{
+		width:500px;
+		float:right;
+		margin-top:10px;
+		margin-right:50px;
+	}
+#readersimageform
+	{
+		margin-top:20px;
+		width:500px;
+		float:left;
+		margin-left:20px;
+	}
+#removemountainimageform		
+	{
+
+		width:500px;
+		height:200px;
+		float:right;
+		margin-right:100px;
+	}
+#removetreeimageform
+	{
+		width:500px;
+		height:200px;
+		float:left;
+		margin-left:20px;
+	}
+#removecloudimageform		
+	{
+		width:500px;
+		height:200px;
+		float:right;
+		margin-right:100px;
+	}
+#removefungiimageform
+	{
+		width:500px;
+		height:200px;
+		float:left;
+		margin-left:20px;
+	}	
+#removeleavesimageform		
+	{
+		width:500px;
+		height:200px;
+		float:right;
+		margin-right:100px;
+	}	
+#removerocksimageform
+	{
+		width:500px;
+		height:200px;
+		float:left;
+		margin-left:20px;
+	}
+#removeotherimageform		
+	{
+		width:500px;
+		height:200px;
+		float:right;
+		margin-right:100px;
+	}	
+#removefoodimageform
+	{
+		width:500px;
+		height:200px;
+		float:left;
+		margin-left:20px;
+	}
+#recipeform		
+	{
+		width:475px;
+		height:200px;
+		float:right;
+		margin-right:50px; 
+		padding:10px;
+		margin-top:20px;
+	}
+#hikersform
+	{
+		width:500px;
+		height:700px;
+		float:left;
+		margin-left:20px;
+	}
+#removehiker		
+	{
+		width:450px;
+		height:100px;
+		float:left;
+		margin-left:80px; 
+	    margin-top:-20px;
+	}
+
+													/*////// faces in food ///////   */
+
+#facesInFood
+	{
+		
+		height:1000px;
+		background-color:#CAB9AB;
+	}
+.slider10
+	{
+		width:55%;
+		/*height:400px;*/
+		position:absolute;
+		left:250px; 
+		top:500px; 
+		color:black; 
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+	}
+#slider10recipe
+	{
+		color:#4D3F34;
+		float:right;
+		position:absolute;
+		top:00px;
+		left:310px;
+		font-weight:lighter;
+	}
+
+#slider10title
+	{
+		margin-top:30px;
+		margin-left:350px; 
+		width:600px;
+		color:#4D3F34;
+	}
+
+											/*////// footer ////// */
+
+
+footer 
+	{
+		font-family:'ZCOOL XiaoWei', serif;; 
+		color: #343756; 
+		background-color:#998675;
+		width:1175px;
+		font-size: 100%; 
+		padding: 15px 15px 15px 10px;
+		border:1px solid #999; 
+		-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+		-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+		box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+		line-height:50%; 
+		height:345px; 
+		clear:both;
+		
+	}
+footer a:link
+	{
+		color:black;
+	}
+footer a:hover
+	{
+		color:white;
+	}
+#footerleft
+	{
+		float:left;
+		width:340px;
+		margin-left:40px;
+	}
+#footercenter
+	{
+		float:left;
+		width:320px;
+		margin-left:10px; 
+	}
+#footercenterright
+	{
+		width:110px;
+		float:right;
+		margin-top:90px;
+	}
+#footerright
+	{
+		float:right;
+		width:300px; 
+		margin-top:20px;
+		text-align:center;
+	}
+#firstname, #lastname, #email, #message
+	{
+		background-color:#004655;
+		color:white;	
+	}
+.current
+	{
+		font-size:1.2em;
+	}
+
+.dropdowna
+	{
+		cursor: pointer;
+		color:black;
+	}
+
+.dropdown 
+	{
+		position: relative;
+		display: inline-block;
+	}
+
+.dropdown-content 
+	{
+		display: none;    /* Dropdown Content (Hidden by Default) */
+		position: absolute;
+		background-color: gray;
+		width:230px;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index:4;
+		color:black;
+		border-radius:5px;
+		font-size:.8m;
+	}
+
+.dropdown-content a 
+	{
+		color: black;    /* Links inside the dropdown */
+		padding: 12px 16px;
+		text-decoration: none;
+		font-size:.8em;
+		display: block; 
+		width:220px;
+		line-height:110%;
+	}
+
+.dropdown-content a:hover 
+	{
+		width:220px;
+	}
+
+.dropdown:hover .dropdown-content
+	{
+		display: block;   /* Show the dropdown menu on hover */
+		
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
