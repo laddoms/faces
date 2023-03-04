@@ -68,8 +68,11 @@
 								$files=glob("./images/mountains/*.{jpg,gif,png,jpeg,JPG,JPEG}", GLOB_BRACE);
 								foreach($files as $file)   ////go through the imagefiles array. For each image do...
 									{
-										echo"<option value=\"$file\">$file</option>";
+										$filewithoutpath=substr($file, 19); //strip off the path
+										echo"<option value=\"$file\">$filewithoutpath</option>";
+										
 									}
+								
 							?>
 					<p><input type="submit" name="submitRemove" value="Remove Selected Mountain Image"></p>
 				</fieldset>
@@ -85,7 +88,9 @@
 								$files=glob("./images/trees/*.{jpg,gif,png,jpeg,JPG,JPEG}", GLOB_BRACE);
 								foreach($files as $file)   ////go through the imagefiles array. For each image do...
 									{
-										echo"<option value=\"$file\">$file</option>";
+										$filewithoutpath=substr($file, 15); //strip off the path
+										echo"<option value=\"$file\">$filewithoutpath</option>";
+										
 									}
 							?>
 					<p><input type="submit" name="submitRemove" value="Remove Selected Tree Image"></p>
@@ -102,7 +107,9 @@
 								$files=glob("./images/clouds/*.{jpg,gif,png,jpeg,JPG,JPEG}", GLOB_BRACE);
 								foreach($files as $file)   ////go through the imagefiles array. For each image do...
 									{
-										echo"<option value=\"$file\">$file</option>";
+										$filewithoutpath=substr($file, 16); //strip off the path
+										echo"<option value=\"$file\">$filewithoutpath</option>";
+										
 									}
 							?>
 					<p><input type="submit" name="submitRemove" value="Remove Selected Cloud Image"></p>
@@ -119,7 +126,9 @@
 								$files=glob("./images/fungi/*.{jpg,gif,png,jpeg,JPG,JPEG}", GLOB_BRACE);
 								foreach($files as $file)   ////go through the imagefiles array. For each image do...
 									{
-										echo"<option value=\"$file\">$file</option>";
+										$filewithoutpath=substr($file, 15); //strip off the path
+										echo"<option value=\"$file\">$filewithoutpath</option>";
+										
 									}
 							?>
 					<p><input type="submit" name="submitRemove" value="Remove Selected Fungi Image"></p>
@@ -136,7 +145,9 @@
 								$files=glob("./images/leaves/*.{jpg,gif,png,jpeg,JPG,JPEG}", GLOB_BRACE);
 								foreach($files as $file)   ////go through the imagefiles array. For each image do...
 									{
-										echo"<option value=\"$file\">$file</option>";
+										$filewithoutpath=substr($file, 16); //strip off the path
+										echo"<option value=\"$file\">$filewithoutpath</option>";
+										
 									}
 							?>
 					<p><input type="submit" name="submitRemove" value="Remove Selected Leaf Image"></p>
@@ -153,7 +164,9 @@
 								$files=glob("./images/rocks/*.{jpg,gif,png,jpeg,JPG,JPEG}", GLOB_BRACE);
 								foreach($files as $file)   ////go through the imagefiles array. For each image do...
 									{
-										echo"<option value=\"$file\">$file</option>";
+										$filewithoutpath=substr($file, 15); //strip off the path
+										echo"<option value=\"$file\">$filewithoutpath</option>";
+										
 									}
 							?>
 					<p><input type="submit" name="submitRemove" value="Remove Selected Rock Image"></p>
@@ -170,7 +183,9 @@
 								$files=glob("./images/otherimages/*.{jpg,gif,png,jpeg,JPG,JPEG}", GLOB_BRACE);
 								foreach($files as $file)   ////go through the imagefiles array. For each image do...
 									{
-										echo"<option value=\"$file\">$file</option>";
+										$filewithoutpath=substr($file, 21); //strip off the path
+										echo"<option value=\"$file\">$filewithoutpath</option>";
+										
 									}
 							?>
 					<p><input type="submit" name="submitRemove" value="Remove Selected Image"></p>
@@ -187,7 +202,9 @@
 								$files=glob("./images/food/*.{jpg,gif,png,jpeg,JPG,JPEG}", GLOB_BRACE);
 								foreach($files as $file)   ////go through the imagefiles array. For each image do...
 									{
-										echo"<option value=\"$file\">$file</option>";
+										$filewithoutpath=substr($file, 14); //strip off the path
+										echo"<option value=\"$file\">$filewithoutpath</option>";
+										
 									}
 							?>
 					<p><input type="submit" name="submitRemove" value="Remove Selected Food Image"></p>
@@ -204,7 +221,9 @@
 								$files=glob("./images/hikersimages/*.{jpg,gif,png,jpeg,JPG,JPEG}", GLOB_BRACE);
 								foreach($files as $file)   ////go through the imagefiles array. For each image do...
 									{
-										echo"<option value=\"$file\">$file</option>";
+										$filewithoutpath=substr($file, 22); //strip off the path
+										echo"<option value=\"$file\">$filewithoutpath</option>";
+										
 									}
 							?>
 					<p><input type="submit" name="submitRemove" value="Remove Selected Hike"></p>
@@ -229,7 +248,8 @@
 								$files=glob("./images/food/*.{jpg,gif,png,jpeg,JPG,JPEG}", GLOB_BRACE);
 								foreach($files as $file)   ////go through the imagefiles array. For each image do...
 									{
-										echo"<option value=\"$file\">$file</option>";
+										$filewithoutpath=substr($file, 14); //strip off the path
+										echo"<option value=\"$file\">$filewithoutpath</option>";
 									}
 							?>
 						<p><input type="submit" name="submit" value="Insert Recipe" ></p>
@@ -252,6 +272,27 @@
 						<p><input type="submit" name="submit" value="Insert Hike" ></p>
 				</fieldset>
 			</form>
+		</div>
+
+		<div id="recipeedit">
+					<form method="post" enctype="multipart/form-data" action="recipeeditform.php" name="selectrecipe" id="selectrecipe">
+						<fieldset>
+							<legend><h3>Edit a Recipe:</h3></legend>	
+							<select name="imagename" id="imagename">
+								<option value=""  selected="selected">Select a recipe to Edit</option>
+								<?php 
+									$files=glob("./images/food/*.{txt}", GLOB_BRACE);
+									foreach($files as $file)   ////go through the imagefiles array. For each image do...
+										{
+											$filetoshow=substr($file, 14); //strip off the path
+											$filetoshow=substr($filetoshow,0, -4);   //strip off the .txt portion of the filetoshow. substr 1st arg is return starting point. 2nd arg is length. neg length starts from the end of the string. 
+											echo"<option value=\"$file\">$filetoshow</option>";
+										}
+								?>
+							</select>
+							<p><input type="submit" name="submit" value="Edit Recipe" ></p>
+						</fieldset>
+					</form>
 		</div>
 		<?php
 			

@@ -16,18 +16,12 @@
     	<link href="styling.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
+<?php include('header.inc.php'); ?>
 <div id="wrapper">
-	<div id="creativestories">
-		
-	<?php include('header.inc.php'); ?>
-		<div id="lakeImg">  					 <!--change the name of this div-->
-			<img src="images/tree4.JPG">
-		</div>
-	<?php include('nav.inc.php'); ?>
 	<div id="mushroomPage">
-		<div id="mushroomImg"><img src="images/mushroommedium.jpg" alt="image of a mushroom with a smile"></div>
+		<img src="images/mushroommedium.jpg" alt="image of a mushroom with a smile" id="mushroomImg">
 		<div id="mushroomstory">
-			<h1>THE STORY ~ Fred the Mushroom</h1>
+			<h1>Fred the Mushroom</h1>
 			<h2>By Amber - Age 17</h2>
 				<p>Fred was born as a little mushroom spore, deep in the fields of Mushtopia. He was the oldest of all his spore siblings. After a 
 					few years, his siblings started to grow into a colony of mushrooms with perfect little umbrella heads. Fred stayed a simple 
@@ -37,11 +31,8 @@
 				   “You weren’t meant to be one of us! You’re too different! Why aren’t you growing like the rest of us?” With all of his siblings 
 				   picking on him, Fred closed his eyes and bent his head and remained dormant for ten more years.
 				</p>
-				
 		</div>
-		<div id="fredfungiImg">
-			<img src="images/fredfungi.jpg" alt="image of fungus on a forest floor">
-		</div>
+		<img src="images/fredfungi.jpg" alt="image of fungus on a forest floor"id="fredfungiImg">
 		<div id="mushroomstory1">
 				<p>On the eleventh year, the sun started to shine brighter than it ever had. “Oh, this is lovely!” cried Fred’s siblings as they 
 				   soaked up the vitamins from the sun. A couple of days past, and the heat wasn’t stopping. Fred’s siblings had no shade to hide 
@@ -67,15 +58,9 @@
 				</p>
 				<p>By Amber – age 17
 		</div>
-	
-	
-	
-	
-	
-	
-	
+	</div>
 </div>
-</body>
+
 <?php include('footer.inc.php'); ?>
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>

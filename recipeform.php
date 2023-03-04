@@ -5,6 +5,7 @@
 					if($_POST['recipename']!=='')   ///check to see if reader uploaded something. REMEMBER TO USE $_FILES not $_POST!
 						{	
 							$recipename=$_POST['recipename'] . "<br />";
+							//var_dump($_POST);
 							$recipename=ucwords($recipename);
 							$ingredients=$_POST['ingredients'];
 							$ingredients=nl2br($ingredients) . '<br />'; 

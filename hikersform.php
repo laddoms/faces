@@ -14,11 +14,11 @@
 									$error=1;   //declare flag var now and set it to 1 meaning an error exists
 									$getname='';  //intialize the var here so you dont get an undefined var error message
 
-											////move it from the temp folder to the hikers image folder
+											////move it from the temp folder to the readers image folder
 
 									if(move_uploaded_file($_FILES['image']['tmp_name'], "./images/hikersimages/{$_FILES['image']['name']}"))  
-										//../ brings file into the hikers image directory. 
-										//Moves the file to the hikersimages folder inside the images folder.
+										//../ brings file into the readers image directory. 
+										//Moves the file to the readersimages folder inside the images folder.
 										{
 											if($_FILES['image']['error']>0)  //check for error codes. A 0 error code indicates no error
 												{
@@ -60,7 +60,7 @@
 															imagepng($target_layer, $filepath );
 														}
 													
-     												?><script type="text/javascript">alert("Eva, your hike submission was successful!");</script>
+     												?><script type="text/javascript">alert("Eva, your portfolio image submission was successful!");</script>
 													<?php
 												}
 											$filename=substr($file, 0,-4);  //the filename var is the name of the file minus the extension. This takes off the .jpg ext so .txt can be added below
@@ -72,7 +72,7 @@
 											
 											file_put_contents($textfile, $datatowritetofile, FILE_APPEND);  //1st arg is the file name to write to. 
 															//2nd arg is the data to be written. 3rd arg means append data to the bottom of the file
-											$textfile=rename($textfile, $textfile);  //gets rid of any spaces in the textfile name so the textfile name will be the same as the imagefile name used in hikers pages. Used to read the file and load the figcaption
+											$textfile=rename($textfile, $textfile);  //gets rid of any spaces in the textfile name so the textfile name will be the same as the imagefile name used in readers pages. Used to read the file and load the figcaption
 											//$filepath=strtolower($filepath);
 											$filepath=rename($filepath, $filepath);
 											header("Location:evasform.inc.php?content=success");
@@ -81,7 +81,7 @@
 								}
 							else  //if the file is not an approved image type
 								{
-									echo'<p class="error">Your hike did not upload properly. Please upload a JPEG, jpg, jpeg, gif, or png type image.
+									echo'<p class="error">Your image did not upload properly. Please upload a JPEG, jpg, jpeg, gif, or png type image.
 										 Or check your file size. Maximum file size allowed is 500kb</p>';
 										$error=1;  ///flag as error
 								}

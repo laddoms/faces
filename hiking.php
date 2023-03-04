@@ -1,4 +1,4 @@
-<head>	
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
 		<html lang="en">
 		<meta name="description" content="Explore faces in nature. Images of nature, rocks, mountains, clouds, leaves, trees, fungi, shadows, and
 		other things that have hidden faces in them" />
@@ -6,57 +6,52 @@
 		facts. Oak trees. Shadows. Clouds. Snow. The story of Wendy the tree. The story of Mr Mushroom." />
 		<meta name="author" content="Laurie Addoms, Eva Keeley">
 		<meta name="google-site-verification" content="SgSoecd7wlU8s7ZpugWhIgYAJd5VMNL3RKI4zTEtUl8" />
-		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		
 		<meta name=viewport content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet"> 
-		<meta http-equiv="content-type" content="text/html;charset=uts-8" />
+		
 		<title>Explore Faces in Nature</title>
 		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     	<link href="styling.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
+<?php include('header.inc.php'); ?>
 <div id="wrapper">	
-	<?php include('header.inc.php'); ?>
-	<div id="hikingimg">
-		<img src="images/mttombanner.jpg" alt="view from Mt Tom Massachusetts">
-	</div>
-	<div id="hikingnav">
-		<?php include('nav.inc.php'); ?>
-	</div>
-	<div id="hiking">
+<div id="hikingpage">	<img src="images/hikingchick21small.jpg" alt="panorama of a ridgeline" id="hikingchick21smallImg">
+	<div id="hikingleft">
+
+
 		<?php if(isset($_GET['content']) && ($_GET['content']=='success'))
 				{
 					echo"<script type=text/javascript>alert(\"Thank you for submitting a hike. It will be sent to Eva for approval.\")</script>"; 
 				}
-			  //if(isset($_GET['content']) && ($_GET['content'] == $image))
-				//{
-				//}
-		?>
 		
+		?>
 			<form method="post" enctype="multipart/form-data" action="hiking.php" name="hikingForm" id="hikingForm" onsubmit="return validateSubmitHiking()" >
-				<fieldset style="width:500px;">
+				<fieldset>
 						<legend><h3>Submit Your Own Favorite Hikes</h3></legend>	
-						<p>Name:
-							<input type="text" autofocus size="35" name="name" id="name" placeholder="Enter Your Name" value="<?php if(isset($_POST['name']))echo $_POST['name'];?>">
+						<p>Name:</p>
+							<p><input type="text" autofocus size="25" name="name" id="name" placeholder="Enter Your Name" value="<?php if(isset($_POST['name']))echo $_POST['name'];?>">
 						</p>
-						<p>Email:
-							<input type="text" size="40" name="hikersemail" id="hikersemail" placeholder="Enter Your Email Address" value="<?php if(isset($_POST['hikersemail']))echo $_POST['hikersemail'];?>">
-						<p>Hike Location:
-							<input type="text" size="40" name="location" id="location" placeholder="Enter The Location of Your Hike" value="<?php if(isset($_POST['location']))echo $_POST['location'];?>">
+						<p>Email:</p>
+							<p><input type="text" size="25" name="hikersemail" id="hikersemail" placeholder="Enter Your Email Address" value="<?php if(isset($_POST['hikersemail']))echo $_POST['hikersemail'];?>">
+						</p>
+						<p>Hike Location:</p>
+							<p><input type="text" size="25" name="location" id="location" placeholder="Enter The Location of Your Hike" value="<?php if(isset($_POST['location']))echo $_POST['location'];?>">
 						</p>
 						<p>Description of Your Hike:</p>
-						<textarea rows="8" cols="55" name="description" id="description"></textarea>
+						<textarea rows="7" cols="30" name="description" id="description"></textarea>
 						<input type="hidden" name="MAX_FILE_SIZE" value="500000" />
 						<h3>Image:(maximum file size is 500kb) <input type="file" name="image" id="image" ></h3>
 						<p><input type="submit" name="submit" value="Submit" ></p>
 						<input type="hidden" name="contact" value="Submit">  
 					</fieldset>
 			</form>
-			
+	</div>
 			<?php
-				require('PHPMailer.php');
-				require('Exception.php');
+				//require('PHPMailer.php');
+				//require('Exception.php');
 				use PHPMailer\PHPMailer\PHPMailer;
 				use PHPMailer\PHPMailer\Exception;
 
@@ -82,7 +77,7 @@
 											{
 												if($_FILES['image']['error']>0)  //check for error codes. A 0 error code indicates no error
 													{
-														echo'<p class="error">The file could not be uploaded. Please try again.</p>';
+														echo"<script type=text/javascript>alert(\"The file could not be uploaded. Please try again.\")</script>"; 
 														$error=1;   ///flag as error
 													}
 												else
@@ -98,7 +93,7 @@
 															}
 														else
 															{
-																echo("<p class=\"error\">$hikersemail is not a valid email address. Please enter a valid email address.</p>");
+																echo"<script type=text/javascript>alert(\"Please enter a valid email address.\")</script>"; 
 																$error=1;   ///flag as error;
 															}
 													}
@@ -106,8 +101,8 @@
 									}
 								else  //if the file is not an approved image type
 									{
-										echo'<p class="error">Your image did not upload properly. Please upload a JPEG, jpg, jpeg, gif, or png type image.
-											 Or check your file size. Maximum file size allowed is 500kb</p>';
+										echo"<script type=text/javascript>alert(\"Your image did not upload properly. Please upload a JPEG, jpg, jpeg, gif, or png type image.
+											 Or check your file size. Maximum file size allowed is 500kb.\")</script>"; 
 											$error=1;  ///flag as error
 									}
 							}
@@ -129,25 +124,24 @@
 								$email->FromName  = $name;   ///the from line is a submission from the hikers Pages
 								$email->Subject   = 'Hike Submitted from a Explore Faces in Nature Hiker';   ///subject of the email
 								$email->Body      = $description . $location;           //this is ok as a variable
-								$email->AddAddress( 'kealeyeva@gmail.com' );  //this is the 'to' address. Remember to change this to evas email address!
-										//remember to change email address above after uploading this page to the live site
+								$email->AddAddress( 'eva@explorefacesinnature.com' );  //this is the 'to' address. Remember to change this to evas email address!
 								$file_to_attach = $getname;   ////this has to be path to image. see this var above.
 								$email->AddAttachment( $file_to_attach , 'Hiker\'s Image Submission' );   ///1st arg is the file. 2nd arg is the file name
 								if( $email->Send())   ////sends the email
 									{
 										echo"<script type=\"text/javascript\">alert(\"Your hike submission was successful. It will be sent to Eva for approval.\")</script>";
 										$_POST=array();
-										var_dump($_POST);
-										header("Location:hiking.php?content=success");
+										//var_dump($_POST);
+										//header("Location:hiking.php?content=success");
 									}
 								else
 									{
-										echo'<p class="error">Message failed to send. Please try again.</p>';
+										echo"<script type=text/javascript>alert(\"The message failed to send. Please try again.\")</script>"; 
 									}
 							}
 						else	
 							{
-								echo'<p class="error">Please retry sending.</p>';
+								echo"<script type=text/javascript>alert(\"The message failed to send. Please try again.\")</script>"; 
 							}
 					}
 	
@@ -183,30 +177,44 @@
 							rename($file, $newfile);  //now rename it to the new filename
 						}
 		
-		echo"</div>";
-		echo"<div id=\"hikes\">";
-			echo"<h2>Local Hikes Submitted by our Readers:</h2>";
+		
+		echo"<div id=\"hikingright\">";
+			echo"<h2>Local Hikes Submitted by our Readers</h2><br />";
 			foreach($imagefiles as $image)   ////go through the imagefiles array. For each image do...
 				{
 					$key=array_search($image, $txtfiles);   //this goes through the text files array and searches for the matching image file name. It returns the key to that file. 
 					$textfile="./images/hikersimages/$txtfiles[$key].txt";  //this assigns the path and filename to the variable 'textfile'
 					$figcaption=ucwords($txtfiles[$key]);
-					echo"<a href=\"./readerhikes.php?content=$txtfiles[$key]&image=$image\"><figure><img src=\"./images/hikersimages/$image.jpg\" width=\"290\" height=\"180\"><figcaption>$figcaption</figcaption></figure></a>";  
+					echo"<a href=\"/readerhikes.php?content=$txtfiles[$key]&image=$image\"><figure><img src=\"./images/hikersimages/$image.jpg\" width=\"290\" height=\"180\"><figcaption>$figcaption</figcaption></figure></a>";  
 						//this is how you can go through the folder and display the image using the variable from the truncated array.
 						//the figcaption is the data from the text file read in line 32. This displays the text file with the matching image file
 				}
 				?>
-			</div>
+		</div>
+	</div>
 		
 
 </div>
 
 </body>
-<div id="hikingfooter">
+
 	<?php include('footer.inc.php'); ?>
-</div>
+
+
+
 <script src="js/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+		  $('.slider11').slick({
+		   fade: true,
+			autoplay: false,
+			autoplaySpeed: 2000,
+			arrows: true,
+			dots: false
+			
+		  });
+    </script>
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 <script>

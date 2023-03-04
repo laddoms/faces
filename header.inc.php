@@ -8,13 +8,21 @@
 		<meta name="google-site-verification" content="SgSoecd7wlU8s7ZpugWhIgYAJd5VMNL3RKI4zTEtUl8" />
 		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 		<meta name=viewport content="width=device-width, initial-scale=1">
-		<link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet"> 
-		<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet"> 
-		<link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet"> 
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet"> 
 		<meta http-equiv="content-type" content="text/html;charset=uts-8" />
 		<title>Explore Faces in Nature</title>
 		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     	<link href="styling.css" type="text/css" rel="stylesheet" />
+		<?php
+		require('PHPMailer.php');
+		require('Exception.php');
+		use PHPMailer\PHPMailer\PHPMailer;
+		use PHPMailer\PHPMailer\Exception; ?>
+	
+			<h1 id="title"><a href="index.php">Explore Faces in Nature</h1></a>
+	
+		<?php include("nav2.inc.php");?>
 </head>

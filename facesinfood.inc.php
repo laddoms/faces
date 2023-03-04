@@ -17,34 +17,31 @@
 </head>
 
 <body>
+<?php include('header.inc.php'); ?>
 <div id="wrapper">
 	<div id="facesInFood">
-		<?php include('header.inc.php'); ?>
-		<div id="lakeImg">  					 <!--change the name of this div-->
-			<img src="images/onion21.jpg">
-		</div>
-		<?php include('nav.inc.php'); ?>
-		<div id="slider10title"><h1>We Even See Faces in Food</h1></div>
+			<div id="slider10title"><h1>We Even See Faces in Food</h1></div>
 			
 				<?php
 				$imagefiles=glob("./images/food/*.{jpg,gif,png,jpeg,JPG,JPEG}", GLOB_BRACE); //store all the image files in an array
 				$txtfiles=glob("./images/food/*.txt");  //store all the recipe files in an array
 
 				function getTextFileName(&$txtfiles)  //use & here so it works by reference and actually changes the values
-					{
+					{								//all these functions do is strip off the path so the slider can match the file names in
+													//the folder. Same txtfile has same imagefile name so the the foreach glob below can use the txtfile as the image caption
 						$txtfiles=substr($txtfiles, 14);  //take off the 1st 14 chars which is the file path
 						$dotposition=strpos($txtfiles, '.'); ///find the position of the dot
 						$txtfiles=substr($txtfiles, 0, $dotposition);  //return the file name up to the dot
 					}
 				function getImageFileName(&$imagefiles)  //use & here so it works by reference and actually changes the values
 					{
-						$imagefiles=substr($imagefiles, 14);  //take off the 1st 23 chars which is the file path
+						$imagefiles=substr($imagefiles, 14);  //take off the 1st 14 chars which is the file path
 						$dotposition=strpos($imagefiles, '.'); ///find the position of the dot
 						$imagefiles=substr($imagefiles, 0, $dotposition);  //return the file name up to the dot
 					}
 				
 				array_walk($txtfiles, 'getTextFileName');  //array walk applies the getTextFileName function to each element of the array and returns the new array
-				array_walk($imagefiles, 'getImageFileName');
+				array_walk($imagefiles, 'getImageFileName'); //array walk applies the getImageFileName function to each element of the array and returns the new array
 				
 				echo"<div class=\"slider10\">";
 					foreach(glob("./images/food/*.{jpg,gif,png,jpeg,JPG,JPEG}", GLOB_BRACE) as $file)  //this changes each image file in the folder to jpgs
@@ -60,39 +57,46 @@
 							$key=array_search($image, $txtfiles);   //this goes through the text files array and searches for the matching image file name. It returns the key to that file. 
 							$textfile="./images/food/$txtfiles[$key].txt";  //this assigns the path and filename to the variable 'textfile'
 							
-								if(in_array($image, $txtfiles))  //if a recipe exists for this image
+								if(in_array($image, $txtfiles))  //if a recipe exists for this image. $image is the needle. $txtfiles is the haystack. Search the haystack for the $image file
 									{
 										$figcaption=file_get_contents($textfile);  //this reads the textfile above and stores the data in figcaption variable
 										$figcaption=str_replace('-', '<li>', $figcaption );  //this takes the dash mark - in the txt file and replaces it with a list item. 
+										$figcaption=nl2br($figcaption);
 										echo"<figure><img src=\"./images/food/$image.jpg\"><figcaption id=\"slider10recipe\">$figcaption</figcaption></figure>";  //the figcaption is the data from the text file read in line 32. This displays the text file with the matching image file
 									}
 								else
-									{
-										echo"<figure><img src=\"./images/food/$image.jpg\"><figcaption>$image</figcaption></figure>";
+									{ 
+										echo"<figure ><img src=\"./images/food/$image.jpg\" id=\"norecipeimage\" ></figure> ";
+									
 									}
-						}
+							
 						
+						}
+					
+				echo"</div>";
+						unset($images);
 				?>
-							</div>
 	</div>
 
-<?php include('footer.inc.php'); ?>
-</body>
 </div>
+<?php include('footer.inc.php'); ?>
+
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
-	<script>
+	
+   	<script>
       $('.slider10').slick({
-       fade: true,
+      fade: true,
         autoplay: false,
         autoplaySpeed: 2000,
         arrows: true,
         dots: false,
-		adaptiveHeight:false
-		
+		adaptiveHeight: true,
+		cssEase:'linear',
+		speed:900,
       });
-    </script>
+      </script>
 <script>
 	$(function(){
 	  $('a').each(function() {

@@ -16,56 +16,47 @@
     	<link href="styling.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
+<?php include('header.inc.php'); ?>
 <div id="wrapper">
 	
-		<?php include('header.inc.php'); ?>
-
-	<div id="greenlakeImg">
-		<img src="images/forestparkarmtree22.jpg" alt="image of a green treed lake">
-	</div>
-	<?php include('nav.inc.php'); ?>
 	<div id="baileypage">
-		<div id="fenceimg"><img src="images/fence.jpg" alt="image of face in a fence"></div>
-		<div id="baileystory">
+		<img src="images/baileysmall.jpg" alt="image of a german sheppherd"  id="baileyimg">
+		<div id="baileystory1">
 			<h1>Bailey’s New Beginning</h1>
-			<h2>By Donna Omega</h2>
+			<h2>By Donna Liese</h2>
 				<p>Every morning Bailey would wake up with a stretch, yawn and wiggle his feet into his black soled slippers.
 				   Fighting his way through his toy cluttered room he would emerge in the hall, squat down, peer into his dog’s eyes
 				   and say, “Bruno I’m bored.” He’d shuffle down the hall with a klip klop, klip klop leaving a trail of black scuff 
-				   marks behind. His mother would shout, “Bailey pick up your feet!”
+				   marks behind. His mother would shout, “Bailey pick up your feet!” When Bailey and Bruno poked their heads into the 
+				   kitchen his mom would say, “Good morning Bailey, how are you today?”“Hi mom, I’m bored.”
 				</p>
-		<div id="baileyfullpage">
-				<p>When Bailey and Bruno poked their heads into the kitchen his mom would say, “Good morning Bailey, how are you today?”
+		</div>
+		<div id="baileystory2">
+				<p>“Bailey how can you be bored you just woke up!” He’d roll his eyes and shrug. “I know!” 
+				   His mother exclaimed, “You need an adventure! You need to use your imagination!”
+					“How do I do that mom?” “Here,” she said clipping the chain onto Bruno’s collar, “Today’s your lucky day. You 
+					can take Bruno for a walk by yourself.”
 				</p>
-				<p>“Hi mom, I’m bored.”</p>
-				<p>“Bailey how can you be bored you just woke up!”</p>
-				<p>He’d roll his eyes and shrug. “I know!” </p>
-				<p>His mother exclaimed, “You need an adventure! You need to use your imagination!”</p>
-				<p>“How do I do that mom?”</p>
-				<p>“Here,” she said clipping the chain onto Bruno’s collar, “Today’s your lucky day. You can take Bruno for a walk 
-				   by yourself.”</p>
 				<p>“But mom he’s so big and strong and not only that there’s ga-ga-ga-ghosts in the neighborhood. I don’t want to go 
-					alone!”</p>
-				<!--div id="turtleimg"><img src="images/turtle.jpg" alt="image of turtle"></div-->
-				<p>“Don’t be silly you won’t be alone. Bruno the world’s biggest German Shepherd will guard you. Here, I’ll even let 
+					alone!”	“Don’t be silly you won’t be alone. Bruno the world’s biggest German Shepherd will guard you. Here, I’ll even let 
 				    you take my blue Nikon cool pix camera and maybe you’ll get some nice shots on your adventure.”</p>
 				<p>Bailey grinned, held his hand out and his mom secured the camera strap around his wrist. He felt himself grow a few
 				   inches because his mom finally trusted him to use her camera. Without notice Bruno jumped onto the screen door and 
-				   began to pull Bailey down the street.</p>
-				<p>“Slow down Bruno! What’s the rush?” </p>
+				   began to pull Bailey down the street.“Slow down Bruno! What’s the rush?” </p>
 				<p>Bruno abruptly stopped, his ears flattened onto his head, he barred his teeth and began to growl like a beast. 
 				   Foam was spewing from his mouth.</p>
+				
 				<p>“Ahhhhhh,” Bailey screamed when he saw the image Bruno did. ”Whooooooah,” they chanted. 
-				   Four barely visible ghosts floated a few feet ahead of them.</p>
-				<p>Bailey uncontrollably shook and Bruno lunged forward snapping the leash from Bailey’s hand. Like a bolt of
-				   lightning Bruno chased the ghosts and in shock they flew backwards into the fence. </p>
+				   Four barely visible ghosts floated a few feet ahead of them. Bailey uncontrollably shook and Bruno lunged forward snapping 
+				   the leash from Bailey’s hand. Like a bolt of lightning Bruno chased the ghosts and in shock they flew backwards into the fence.</p>
+				<img src="images/fencemedium.jpg" alt="image of a fence"  id="fenceimage">
 				<p>Bailey quickly focused the camera on the fence where the ghost’s face prints were. He took a picture and with jet 
-				   like speed ran back down the street so fast that Bruno couldn’t even keep up with him.</p>
-				<p>From that day on Bailey was never bored and actually has proof that ghosts really do exist.</p>
+				   like speed ran back down the street so fast that Bruno couldn’t even keep up with him. From that day on Bailey was never bored 
+				   and actually has proof that ghosts really do exist.</p>
 		</div>
 	</div>
 </div>
-</div>
+
 </body>
 <?php include('footer.inc.php'); ?>
 <script src="js/jquery-1.11.2.min.js"></script>

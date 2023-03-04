@@ -1,1091 +1,3234 @@
+@media screen and (max-width: 767px) 
+					{
+						 body 
+							{
+								background-color: #E8E8F4;
+								
+							}
+						
+						#wrapper
+							{
+								width:100%;  	
+								background-image: none;
+								box-sizing: border-box;
+								
+								font-size:10px;	
+								float:left;
+								background-color:#355a79;
+							}
+						#header
+							{
+								height:9%;
+								text-align:center; 
+								color:#355a79;
+							}
+						a:visited {color:#355a79;}
+																	/*///////////nav//////////*/
+					
+						.dropdown-content 
+							{
+								 display:none;
+							}
+						#nav2
+							{
+								display: block;
+								width:100%;
+								margin:auto;
+								color:#355a79;
+								font-family:  'ZCOOL XiaoWei', serif; 
+								background-color:white;
+							}
+						#nav2 li
+							{
+								display: block;
+								font-size: 1.2em;        
+								color:#355a79; 
+								text-align:center;
+								display:block;
+								width:100%;
+								margin:auto;
+							}
+						#nav2 ul {display:block;padding:0px;}
+						#nav2 a:link 
+							{
+								text-decoration: none; 
+								color:#355a79;
+							}
+						
 
-head, section, footer, nav, figure, figcaption {display: block;}
-body 
-	{
-		font-family:  'ZCOOL XiaoWei', serif;
-		line-height: 1em;
-		font-size: 1em;
-	}
-head
-	{
-		width:1200px; 
-		margin: 20px; 
-	}
-#wrapper
-	{
-		width:1200px;  
-	}
+  				
 	
-														/*/////////NAV/////////*/
-#indexnav nav
-	{
-		margin-top:80px;
-	}
-nav
-	{
-		font-family:  'ZCOOL XiaoWei', serif;
-		position: absolute;
-		left: 25px;
-		top: 355px;  
-		background-image:#94A295;
-		border-radius:10px;
-		opacity:.8;
-	}
+															/*/////// index ///////*/
+						
+						#title
+							{
+								background-color:white;
+								color:#141831;
+								font-size:1.7em;
+								font-family: 'Dancing Script', cursive;     
+								width:100%;
+								text-align:center; 
+							}
+						#title a:link	
+							{
+								text-decoration: none; 
+								color:#141831;
+							}
+						#indexpage{background-color:#355a79;}
+						#backgroundimg
+							{
+								display:none;
+							}
+						#welcome1, #welcome2, #welcome3
+							{
+								padding-left:8%;
+								padding-right:8%;
+								line-height:1.5em;
+								font-size:1.5em;
+								text-align:justify; 
+								
+								color:white;
+								border-radius:2px;
+							}
+						#welcome1 h2, #welcome2 h2, #welcome3 h2
+							{
+								text-align:center;
+							}
+						.row img
+							{
+								width:50%;
+								height:50%;
+								float:left;
+								margin-left:21%;
+								padding:10px;
+							}
+					
+						
 
-nav ul 
-	{
-		padding: 5px 5px 5px 10px;
-	}
-nav li 
-	{  
-		display: inline;
-		margin-right: 5px; 
-		margin-left:5px; 
-		margin-bottom:10px;
-		padding-left:5px; 
-		padding-right:5px;
-		padding-bottom:10px;
-		font-size: 1.5em; 
-	}
-nav a:link 
-	{
-		text-decoration: none; 
-		color:white;
-	}
-nav a:hover
-	{
-		color:blue;
-	}
-a:visited 
-	{
-		color:white;
-	}
+															/*/////////   FOOTER ////////*/
 
-														/* /////  index.php /////  */
 
-#treearmsimg
-	{
-		height:600px;		
-	}
-#title
-	{
-		color:#F1FBFD;
-		font-size:2em;
-		position:absolute; 
-		top:100px;
-		left:85px;
-		background:#357582;
-		border-radius:10px;
-		opacity:.7;
-		width:850px;
-		text-align:center;
-	}
-#clouds
-	{
-		background-image:  url("images/dragoncloudbackground.jpg");
-		background-position:center;
-		background-repeat:no-repeat;
-	    width:1200px;
-		height:795px;	
-		position:absolute; 
-		top:285px;    
-		margin-bottom:20px;
-		z-index:-1;
+						footer      
+							{
+								font-family:'ZCOOL XiaoWei', serif;
+								color: white; 
+								background-color:#3f6a8f;
+								font-size: 120%; 
+								padding: 15px 15px 15px 10px;
+								line-height:50%; 
+								
+							}
+						footer a:link
+							{
+								color:white;font-size: 80%;
+							}
+						#footerleft
+							{
+								text-align:center; 
+							}
+						#footerleft img
+							{ margin-top:3%;}
+						#footercenter
+							{
+								text-align:center;
+								
+							}
+						#footerright	
+							{
+								text-align:center; 
+								line-height:1em; 
+								font-size:1.4em;
+							}
+						#footercenterright
+							{
+								margin-left:25%;
+							}
+						footer a:visited {color:white;}
+							
+							
+															/*///////// donna ////////////*/
+															
+															
+	
+							#donnapage
+								{
+									background-color:#355a79;
+									color:white;
+									width:100%;
+									text-align:center;
+								}
+							#donna
+								{
+									background-color:#355a79;
+									font-family: 'ZCOOL XiaoWei', serif;
+									font-size:1.3em;
+									text-align:justify;
+									line-height:1.4em;
+									padding:10px;
+								}
+							#donna p  {font-size:1.4em;}
+							#donna h2 {text-align:center;}
+							#donnaImg 
+								{ 
+									display: block; /* this must be block to make it auto center */
+								    margin-left: auto;
+								    margin-right: auto;
+								    width: 50%;
+								    height:30%; 
+									max-width:176px;
+									max-height:200px;
+									margin-bottom:5%; 
+									margin-top:5%;
+									border:4px solid gray;
+									border-style:inset;
+								}
+							#donnaphotolarge{display:none;}
+							
+							#photographybydonnaimages img
+								{	
+									
+									display: block; /* this must be block to make it auto center */
+								    margin-left: auto;
+								    margin-right: auto;
+								    width: 50%;
+								    height:30%; 
+									max-width:176px;
+									max-height:200px;
+									border:4px solid gray;
+									border-style:inset;
+								}
+							#donnapage h1
+								{
+									font-size:2em;
+									width:100%;
+									
+								}
+							
+															/*////////// portfolio ////////////*/
 		
-	}
-#welcome
-	{
-		color:black;
-		width:400px;
-		line-height:1.5em;
-		font-size:1.1em;
-		position:absolute;
-		top:490px;     
-		left:30px;  
-		text-align:LEFT;
-	}
-#welcome1
-	{
-		margin-top:40px;
-		width:600px;
-		
-	}
-#welcome3
-	{
-		margin-right:10px;
-	}
-#originaltree
-	{
-		height:148px; 
-		width:200px; 
-		border: 1px solid black;
-	}
-#welcome4
-	{
-		width:500px; 
-		position:relative;
-		top:-170px;
-		left:220px;
-	}
-#welcome5
-	{
-		position:relative;
-		top:-120px;
-		width:600px;
-	}
-.slider
-	{
-		width:300px;
-		position:absolute; 
-		left:800px; 
-		top:620px; 
-		
-	}
-#indexfooter
-	{
-		margin-top:460px;
-	}
+							
+							.slider2, .slider3, .slider4, .slider5, .slider6, .slider7, .slider8
+								{
+									/*width:90%;*/
+									height:30%;
+									 margin-bottom:22%;
+									margin-top:5%;
+									
+								}
+							
+							#portfoliosliders img
+								{
+									background-color:gray;
+									border:2px solid gray;
+									padding:1%; 
+									width:200px; 
+									height:280px;
+									margin:auto;
+								}
+							#portfoliosliders
+								{
+									background-color:#355a79;
+									/*height:auto;  */
+									width:100%;
+									text-align:center; 
+									overflow:scroll;
+								}
+							#slider2title, #slider3title, #slider4title, #slider5title, #slider6title, #slider7title, #slider8title
+								{
+									text-align:center;
+									color:white;
+									margin-bottom:1%;
+								}
+							
+								
 
+
+															/*///////////// food ///////////*/
+							
+						
+							#facesInFood
+								{
+									background-color:#3f6a8f;
+									font-family: 'ZCOOL XiaoWei', serif;
+									height:auto;
+									overflow:scroll;
+								}
+							#facesInFood img
+								{
+									background-color:gray;
+									border:2px solid white;
+									padding:1%; 
+									width:200px; 
+									height:280px;
+		`							margin-left:0%;
+								}
+							.slider10
+								{
+									width:90%;
+									height:230%; 
+									overflow:scroll;
+									margin-left:8%;
+								}
+							#slider10recipe
+								{
+									color:white;
+									height:auto; 
+									width:120%;
+									overflow:scroll;
+									font-size:1.4em;
+									margin-left:-10%;
+								}
+
+							#slider10title
+								{
+									width:100%;
+									text-align:center;
+									color:white;
+								}
+							#norecipeimage
+								{
+									margin-left:00%; 
+									margin-top:0px;
+								}
+
+
+															/*///////stories///////////*/
+
+							#stories
+								{
+									background-color:#3f6a8f;
+									font-family: 'ZCOOL XiaoWei', serif;
+									height:150%;
+								}
+							#creativestories
+								{
+									background-color:#3f6a8f;
+								}
+							#creativestories img
+								{
+									width:75%;
+									margin-left:15%;
+								}
+							#creativestories p 
+								{
+									font-size:1.9em; 
+									text-align:center;
+								}
+							#stories h2
+								{
+									background-color:#3f6a8f;
+									width:100%;
+									color:white;
+									height:7%;
+									text-align:center;
+									font-size:1.9em;
+								}
+							#wendylink
+								{
+									width:90%; 
+									background-color:#3f6a8f;
+									padding:2%;
+								}
+							
+							#baileylink
+								{
+									width:90%; 
+									background-color:#3f6a8f;
+									padding:2%;
+								}
+							#mushroomlink
+								{
+									width:90%; 
+									background-color:#3f6a8f;
+									padding:2%;
+								}
+							#stories a:link
+								{
+									color:white;
+								}
+							#stories a:hover
+								{
+									color:black;
+								}
+							#stories a:visited {color:white;}
+
+
+														/*////// wendy //////*/
+
+
+							#wendyPage
+								{
+									background-color:#3f6a8f;
+									font-family: 'ZCOOL XiaoWei', serif;
+									height:300%;
+									color:white;
+									text-align:justify;
+									overflow-y:scroll;
+									line-height:1em;
+									width:100%;
+									float:left;
+									padding-left:5px;
+									font-size:1.7em;
+								}
+							#wendyPage img	
+								{
+									width:90%;
+								}
+							#wendystory
+								{
+									line-height:1em;
+									width:90%;
+									float:left;
+									padding-left:5px;
+								}
+							#wendyfullpage
+								{
+									line-height:1em;
+									width:90%;
+									float:left;
+									padding-left:5px;
+								}
+							#wendyImg
+								{
+									padding-top:5%;
+									margin-top:2%;
+									margin-left:3%;
+								}
+							#turtleimg
+								{
+									display:none;
+								}
+							#submissions
+								{
+									color: #003C00;
+								}
+
+
+											/*/////////// mushroom story  ///////*/
+
+
+							#mushroomPage		
+								{
+									background-color:#3f6a8f;
+									font-family: 'ZCOOL XiaoWei', serif;
+									height:auto;
+									color:white;
+									text-align:justify;
+									overflow-y:scroll;
+									line-height:1.2em;
+									width:90%;
+									float:left;
+									padding:5%;
+									font-size:1.7em;
+									
+								}
+							#mushroomPage h1
+								{
+									text-align:center;
+									line-height:1.2em;
+								}
+							#mushroomImg
+								{
+									width:70%;
+									margin-left:2%;
+									margin-top:2%;
+									border: 2px solid gray;
+									border-bottom-style:inset;
+								}	
+							#fredfungiImg
+								{
+									width:70%;
+									margin-left:2%;
+									margin-top:2%;
+									border: 2px solid gray;
+									border-bottom-style:inset;
+								}
+
+
+
+														/*////////Bailey Story//////*/
+
+
+
+							#baileypage
+								{
+									background-color:#3f6a8f;
+									font-family: 'ZCOOL XiaoWei', serif;
+									height:auto;
+									color:white;
+									text-align:justify;
+									overflow-y:scroll;
+									line-height:1.2em;
+									width:90%;
+									float:left;
+									padding:5%;
+									font-size:1.7em;
+									
+								}
+							#baileystory1 h1
+								{
+									text-align:left;
+									line-height:1.2em;
+								}
+									
+							#baileyimg	
+								{
+									width:90%;
+									float:left;
+									margin-left:5%;
+									margin-top:9%;
+									border:4px solid gray;
+									background-color:black;
+								}
+							#fenceimage
+								{
+									border:2px solid gray;
+									border-style:inset;
+									float:right;
+									margin-right:8%;
+									margin-left:2%;
+									margin-top:-2%;
+								}
+
+							
+														/*///////////  hiking  ///////////*/
+			
+						
+							#hikingpage
+								{
+									background-color:#3f6a8f;
+									font-family: 'ZCOOL XiaoWei', serif;
+									overflow:scroll;
+									height:auto;
+									padding-top:.5%;
+									color:white;
+								}
+							#hikingchick21smallImg
+								{
+									margin-top:5%;
+									margin-left:5%;
+									width:90%;	
+									float:left;z-index:1;display:block;position:relative;
+								}
+							#hikingleft  /*  this is the form portion of the page */
+								{
+									position:relative;
+									left:0%;
+									background-color:#3f6a8f;
+									font-size:1.7em; 
+								}
+							#hikingleft h3
+								{
+									line-height:1.5em;
+								}
+							#hikingleft form 
+								{	
+									position:relative;
+									height:auto;
+									overflow:scroll;
+									text-align:center;
+									width:90%;
+									line-height:50%; 
+									margin-left:7%;
+								}
+							#hikingright  /* this is the list of user submitted hikes */
+								{
+									position:relative;
+									float:left;
+									left:.5%;
+									top:-60%;
+									width:90%;
+									overflow-y:scroll;
+									color:white;
+								}
+							#hikingright h2
+								{
+									margin-left:3%;
+									width:90%;
+									font-size:2em;
+									text-align:center;
+								}
+							#hikingpage a
+								{
+									color:white; 
+									font-weight:bold; 
+									font-size:2em;
+								}
+							
+							#hiking a:visited {color:white;}
+							
+															/*///////   readerhikes  ///////*/
+							
+
+							#readerhike
+								{
+									background-color:#3f6a8f;
+									font-family: 'ZCOOL XiaoWei', serif;
+									height:70%; 
+									padding-top:.5%;
+									color:white;
+								}
+							#hikename
+								{
+									
+									background-color:#3f6a8f;
+									width:90%;
+									text-align:left;
+									float:left;
+									margin-top:8%;
+									margin-left:5%;
+									overflow-y:scroll;
+									font-size:1.8em;
+								}
+							#hikerimage
+								{
+									float:left;
+									margin-left:10%;
+									margin-top:8%;
+								}
+			
+														/*/////////// readers pages / submissions  ///////*/
+
+							#readersPage
+								{
+									background-color:#3f6a8f;
+									font-family: 'ZCOOL XiaoWei', serif;
+									overflow:scroll;
+									height:auto;
+									padding-top:.5%;
+									color:white;
+								}
+							.slider9
+								{
+									display:none;  /*do not display the larger slider in cell phone sized screens */
+								}
+							.slider11
+								{
+									width:98%; height:100%;
+									margin-left:5%; 
+									font-size:1.6em; 
+									overflow:scroll;
+									height:auto;
+								}
+							.slider11 img
+								{
+									width:90%;
+									height:55%;max-height:260px;
+									margin-top:8%;
+									margin-bottom:10%;
+								}
+							#slider9title
+								{
+									position:relative;
+									top:1%;
+									left:9%;
+									width:80%;
+									color:white;
+									text-align:center;
+									padding-top:1%;
+									font-size:1.5em;
+								}
+							#readersPageP
+								{
+									color:white;
+									width:55%;
+									line-height:1.8em;
+									margin-left:23%;
+									margin-top:-30%;
+									float:left;
+								}
+							#readersPageP h2
+								{
+									text-align:center;font-size:2em;
+								}
+							#readersPageP p
+								{
+									width:100%;
+									text-align:center;
+									font-size:2em;
+								}
+							#readersPageForm
+								{
+									margin-top:-5%;
+									float:left;
+									width:90%;
+									overflow:scroll;
+									height:auto;
+									margin-left:5%; 
+									text-align:left;
+									padding:1%;  
+									font-size:1.5em;
+								}
+							#readersPageForm p 
+								{font-size:1.2em;}
+							/*#readerssubmissions
+								{
+									width:1000px;
+									float:right;  
+									text-align:center;
+									margin-top:50px;
+								}	*/
+							#name, #postTitle, #postContent, #readersemail
+								{
+									background-color:white;
+									color:black;
+								}
+							#hiking #name, #postContent
+								{
+									background-color:white;
+									color:black;
+									/*this is here to prevent green backgrounds in the form in hikers pages*/
+								}
+							.error
+								{				
+									color:red;
+									width:800px;
+									position:absolute;
+									top:0%;
+									left:4%;
+								}
+
+															/*////////  books  /////////*/
+		
+				
+							#bookbanner{display:none;}
+							#coverImg
+								{
+									width:90%;
+									float:left;
+									margin-top:8%;
+									margin-left:4%;
+								}
+							
+							#book2Img
+								{
+									float:right;
+									margin-top:14%;
+									margin-right:5%;
+									padding-bottom:4%;
+								}
+							#content
+								{
+									background-color:#3f6a8f;
+									font-family: 'ZCOOL XiaoWei', serif;
+									margin-top:0%;
+									color:white;
+									overflow:scroll;
+									height:auto;
+								}
+							#paypal
+								{
+									width:90%;
+									overflow:scroll;
+									height:auto;
+									float:right;
+									margin-right:3%; 
+									margin-top:2%;
+									text-align:center; 
+									font-size:2em; 
+									color:white;
+								}
+							#paypal td  {color:white;}
+							#paypalimage 
+								{
+									width:65%;
+								}
+							#paypal table
+								{
+									margin-left:2%;
+								}
+							#purchaseoptions
+								{
+									margin-left:10%;
+								}
+							#aboutbook
+								{ 
+									width:90%;
+									overflow:scroll;
+									height:auto;
+									font-size:1.8em;
+									margin-left:1%;
+									padding:3%;
+									line-height:1.6em; 
+									text-align:justify;
+								}
+							#aboutbook h4 
+								{
+									text-align:center; 
+									font-size:1.2em; 
+									line-height:1em;
+								}
+							#authorEvaImg
+								{
+									float:left; 
+									margin-right:5%;
+									border:5px solid gray;
+									border-style: inset;
+								}
+							#aboutEva
+								{
+									float:left;
+									margin-left:2%;
+									width:90%;
+									font-size:1.8em;
+									margin-top:6%;
+									line-height:1.6em;
+									text-align:justify;
+									padding-right:3%;
+									padding-left:3%;
+								}
+							#aboutEva p, h4
+								{
+									margin-top:0%;
+								}
+							#aboutMichelle
+								{
+									float:left;
+									margin-left:2%;
+									width:90%;
+									font-size:1.8em;
+									margin-top:4%;
+									line-height:1.6em;
+									text-align:justify;
+									padding-right:3%;
+									padding-left:3%; 
+								}
+							#aboutMichelleImg
+								{
+									float:left; 
+									margin-left:%; margin-right:5%;
+									/*width:50%;*/
+									border:5px solid gray;
+									border-style: inset;
+								}
+							#aboutMichelle p, h4
+								{
+									width:100%; padding:1%;
+								}
+							#bookisbn
+								{
+									float:left;	
+									width:75%;
+									margin-top:6%;
+									margin-left:4%;
+									font-size:1.7em;
+								}
+							#smallbookimage
+								{
+									
+									float:left;
+									border:5px solid gray;
+									border-style: inset;
+									margin-left:5%;
+									margin-top:3%;
+								}
+
+												/*/////// contact  /////*/
+
+							#waterbackground
+								{
+									width:100%;
+									height:20%;
+								}
+
+							.contact
+								{	
+									font-family: 'ZCOOL XiaoWei', serif;
+									text-align:center; 
+									line-height:1.2em;
+									font-size:1.9em;
+									overflow:scroll;
+									height:auto;color:white;
+								}
+							.contact h1
+								{
+									text-align:center;
+									width:90%;
+									margin-left:5%;
+									margin-top:5%;
+								}
+							 hr
+								{
+									width:20%;
+									border: 5px solid white;
+									border-radius: 5px;
+									
+								}
+							.contact img
+								{
+									border-radius:50%;
+								}
+							.contact a
+								{
+									color:white;
+								}
+							
+							
+							#contactemaildiv
+								{	display:block;
+									width:100%;
+									overflow:scroll;
+									height:auto;
+									text-align:center;
+									margin-top:6%;
+									margin-left:auto;
+									margin-right:auto;
+									float:left;
+									border-bottom:2px solid #b2c4d3;
+									padding-right:2%;
+									padding-bottom:8%;
+								}
+							#contactformdiv
+								{	
+									width:100%;
+									overflow:scroll;
+									height:auto;
+									float:left;
+									margin-top:5%;
+									text-align:center;
+									border-bottom:2px solid #b2c4d3;
+									line-height:.6em;
+								}
+							#contactformdiv form
+								{
+									display:block;
+									margin-left:auto;
+									margin-right:auto;
+									width:50%;
+								}
+							#contactformdiv h2
+								{
+									text-align:center;
+								}
+							 #contactfirstname, #contactlastname, #contactformdiv #contactemail, #contactmessage
+								{
+									background-color:#355a79;
+									color:white;	 
+									font-weight: bold;
+								}
+							#contacthikelink
+								{
+									width:92%;
+									overflow:scroll;
+									height:auto;
+									float:left;
+									margin-left:2%;
+									margin-top:5%; 
+									text-align:center;
+									border-bottom:2px solid #b2c4d3;
+								}
+					}
+
+
+															/*///// tablet size ///////*/
+
+											@media screen and (min-width: 768px) and (max-width:1024px)
+												{	
+													body 
+														{
+															width:100%;
+															
+														}
+													#wrapper
+														{
+															width:100%;  	
+															background-image: none;
+															box-sizing: border-box;
+															float:left;
+															
+														}
+													#header
+														{
+															height:9%;
+															text-align:center; 
+														}
 
 												
-															/*///////donna//////*/
+																	/*///////////nav//////////*/
+												
+													.dropdown-content 
+														{
+															 display:none;
+														}
+													#nav2
+														{	display:block;
+															width:100%;
+															margin:auto;
+															color:#355a79;
+															font-family:  'ZCOOL XiaoWei', serif; 
+															background-color:white;
+														}
+													#nav2 li
+														{
+															display:block;
+															width:100%;
+															margin:auto;
+															font-size: 1.2em;        
+															color:#355a79; 
+															text-align:center;
+														}
+													#nav2 ul {display:block;padding:0px;}
+													#nav2 a:link 
+														{
+															text-decoration: none; 
+															color:#355a79;
+														}
+													#title
+														{
+															background-color:white;
+															color:#141831;
+															font-size:1.7em;
+															font-family: 'Dancing Script', cursive;     
+															width:100%;
+															text-align:center; 
+														}
+													
+													#title a:link	
+														{
+															text-decoration: none; 
+															color:#141831;
+														}
+													#nav2 a:visited, #title a:visited {color:#355a79;}
+													
 
-#donna
-	{
-		background-color:#5B7F6A;
-		font-family: 'ZCOOL XiaoWei', serif;
-		font-size:1.2em;
-		color:black;
-		width:844px;
-		height:366px;
-		line-height:2em;
-		float:left;
-		padding:10px;
+															/*////////// index /////////*/
+
+
+													#indexpage{display:block;}
+													#welcome1
+															{ display:block;
+																font-family: 'ZCOOL XiaoWei', serif;
+																color:white;
+																background-color:#3f6a8f;
+																width:200px;
+																line-height:1.5em;
+																font-size:1.2em;
+																position:absolute;
+																z-index:1;
+																top:10px;
+																left:2%;
+																text-align:justify;
+																padding:2%; 
+																opacity:.8;
+																border-radius:2px;
+															}
 		
-	}
-#donnaImg
-	{
-		float:right;
-	}
-															/*/////portfolio  //////*/
+														#welcome2
+															{  
+																font-family: 'ZCOOL XiaoWei', serif;
+																color:white;
+																background-color:#3f6a8f;
+																width:200px;
+																line-height:1.5em;
+																font-size:1.2em;
+																display:block;
+																z-index:1;
+																top:10px;
+																left:36%;
+																text-align:justify;
+																padding:2%;
+																opacity:.8; 
+																border-radius:2px;position:absolute;
+															}
+														#welcome3
+															{
+																font-family: 'ZCOOL XiaoWei', serif;
+																color:white;
+																background-color:#3f6a8f;
+																width:200px;
+																line-height:1.5em;
+																font-size:1.2em;
+																position:absolute;
+																z-index:1;
+																top:10px;
+																right:2%;
+																text-align:justify;
+																padding:2%;
+																opacity:.8;
+																margin-right:auto;
+																border-radius:2px;
+															}
+														#welcome1 h2, #welcome2 h2, #welcome3 h2, #welcome4 h2
+															{
+																text-align:center; font-size:1.5em;
+															}
+														#backgroundimgdiv{width:auto;position:relative;}
+													
+														.row
+															{
+																width:88%;
+																background-color:#345877;
+																margin-top:-53%;
+																float:left;
+																margin-left:7.5%;position:absolute;
+																border:5px solid gray;
+																border-style:inset;
+															}
+														.row img
+															{
+																z-index:1;
+																width:24.4%;
+															}
 
-.slider2
-	{
-		width:390px;
-		height:440px;
-		position:absolute;
-		left:100px; 
-		top:500px;  
-		color:white;
-	}
-.slider3
-	{
-		width:400px;
-		height:500px;
-		position:absolute;
-		left:660px; 
-		top:500px;  
-		color:white;
-	}
-.slider4
-	{
-		width:400px;
-		height:500px;
-		position:absolute;
-		left:100px; 
-		top:1040px; 
-		color:black; 
-	}
-.slider5
-	{
-		width:400px;
-		height:500px;
-		position:absolute;
-		left:660px; 
-		top:1040px; 
-		color:black;  
-	}
-.slider6
-	{
-		width:400px;
-		height:500px;
-		position:absolute;
-		left:100px; 
-		top:1450px; 
-		color:black;  
-	}
-.slider7
-	{
-		width:400px;
-		height:500px;
-		position:absolute;
-		left:660px; 
-		top:1450px; 
-		color:black;  
-	}
-.slider8
-	{
-		width:400px;
-		height:500px;
-		position:absolute;
-		left:450px; 
-		top:1970px; 
-		color:black;  
-	}
+														#image3, #image4
+															{
+																float:left; 
+															}
+														#image4
+															{
+																padding-left:5px;
+															}
+																
+														#image1, #image2
+															{
+																float:left; 
+																padding-right:5px;
+															}
+														
 
-.slider2.slick-dots
-	{
-		position: absolute;
-		bottom: 10px;
-		display: block;
-		width: 100%;
-		padding: 0;
-		list-style: none;
-		text-align: center;
-	}
-.slider3.slick-dots
-	{
-		position: absolute;
-		bottom: 70px;
-		display: block;
-		width: 100%;
-		padding: 0;
-		list-style: none;
-		text-align: center;
-	}
-.slider4.slick-dots
-	{
-		position: absolute;
-		top:-50px;
-		display: block;
-		width: 100%;
-		padding: 0;  border:1px solid black;
-		list-style: none;
-		text-align: center;
-	}
-.slider5.slick-dots
-	{
-		position: absolute;
-		bottom: 50px;
-		display: block;
-		width: 100%;
-		padding: 0;
-		list-style: none;
-		text-align: center;
-	}
-.slider6.slick-dots
-	{
-		position: absolute;
-		bottom: 0px;
-		display: block;
-		width: 100%;
-		padding: 0;
-		list-style: none;
-		text-align: center;
-	}
-.slider7.slick-dots
-	{
-		position: absolute;
-		bottom: 50px;
-		display: block;
-		width: 100%;
-		padding:0;
-		list-style: none;
-		text-align: center;
-	}
+																/*//////////  footer //////////*/
 
-#portfolioImg
-	{
-		height:392px; 
-	}
+														footer 
+															{
+																font-family:'ZCOOL XiaoWei', serif;
+																color: white; 
+																background-color:#355a79;
+																width:100%;
+																font-size: 100%; 
+																padding: 15px 15px 15px 10px;
+																/*border:1px solid #999; */
+																-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+																-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+																box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+																line-height:50%; 
+																height:345px; 
+																clear:both;
+															}
+														footer a:link
+															{
+																color: white;
+															}
+														footer a:hover
+															{
+																color:black;
+															}
+														footer a:visited {color:white;}
+														#footerleft
+															{
+																float:left;
+																width:30%;
+																margin-left:1%;
+															}
+														#footercenter
+															{
+																float:left;
+																width:30%;
+																margin-left:2%; 
+															}
+														#footercenterright
+															{
+																display:none;
+															}
+														#footerright
+															{
+																float:right;
+																width:30%; 
+																margin-top:-5px;
+																text-align:center;
+															}
+														#firstname, #lastname, #email, #message
+															{
+																background-color:white;
+																color:black;	
+															}
+																											
+															/*////////   donna  //////////*/
+															
 
-#portfoliosliders
-	{
-		background-color:#0C1F28;  
-		height:1900px; 
-		margin-top:-45px;
-		padding-top:40px;
-		padding-left:50px; 
-	}
-#slider2title
-	{
-		position:absolute;
-		top:450px;
-		left:180px;
-		color:white;
-	}
-#slider3title
-	{
-		width:270px;
-		position:absolute;
-		top:450px;
-		left:770px; 
-		color:white;
-	}
-#slider4title
-	{
-		width:400px;
-		position:absolute;
-		top:975px;
-		left:180px; 
-		color:white;
-	}
-#slider5title
-	{
-		width:400px;
-		position:absolute;
-		top:975px;
-		left:730px;
-		color:white;
-	}
-#slider6title
-	{
-		width:475px;
-		position:absolute;
-		top:1390px;
-		left:185px; 
-		color:white;
-	}
-#slider7title
-	{
-		width:280px;
-		position:absolute;
-		top:1390px;
-		left:740px; 
-		color:white;
-	}
-#slider8title
-	{
-		width:380px;
-		position:absolute;
-		top:1820px;
-		left:440px; 
-		color:white;
-	}
-        
+														#donnapage
+															{
+																display:block; background-color:#355a79;width:100%;height:100%;
+															}
+														#donna p
+															{
+																background-color:#355a79;
+																font-family: 'ZCOOL XiaoWei', serif;
+																padding-right:10px;padding-left:10px;
+																text-align:justify;
+																line-height:1.4em;
+																color:white;font-size:1em;
+															}
+														
+														#donna h2 {text-align:center;color:white;}
+														#donnaImg 
+															{ 
+																display: block; /* this must be block to make it auto center */
+																margin-left: auto;
+																margin-right: auto;
+																width: 60%;
+																height:40%; 
+																max-width:200px;
+																max-height:250px;
+																margin-bottom:5%; 
+																margin-top:5%;
+																border:4px solid gray;
+																border-style:inset;
+															}
+														#photographybydonnaimages{display:none;}
+														#donnaphotolarge
+															{
+																position:relative;
+																top:5%;
+																left:5%;
+																width:90%;
+																height: 200px;
+																
+															}
+														#donnaphotolarge fieldset	
+															{	
+																color:white;
+																height:220px;
+																font-size:1.2em;padding-left:5%;
+															}	
+														#donnaphotolarge img
+															{
+																width:200px;
+																height:200px;
+																border:4px solid gray;
+																border-style:inset;max-height:200px;
+															}
+																									
 
-
-													/*/////// nature facts /////////*/
-
-/*#oldoaktreeImg
-	{	
-		background-image: url("images/trees/oldoaktree.jpg");
-		margin-left:100px;
-		margin-top:90px;
-		width:300px; 
-		border: 1px solid gray;
-		border-radius:10px; 
-		height:285px;
-		font-family: 'Kalam', cursive;
-		max-width:100%;
-	}
-#oaktreesP
-	{
-		width:600px;
-		line-height:1.5em;
-	    margin-left:600px;
-		margin-top:-340px;
-		font-family: 'Kalam', cursive;
-	}
-#oaktreeh1
-	{
-		margin-left: 120px;
-		width: 240px;
-		color:#323EA6
-	}
-#cloudImg
-	{	
-		background-image: url("images/cloud.jpg");
-		margin-left:100px;
-		margin-top:10px;
-		margin-bottom:10px;
-		width:300px; 
-		border: 1px solid gray;
-		border-radius:10px; 
-		height:285px;
-	}
-#cloudsh1
-	{
-		margin-left: 120px;
-		width: 240px;
-		color:#323EA6
-	}
-#cloudsP
-	{
-		width:600px;
-		line-height:1.5em;
-	    margin-left:600px;
-		margin-top:-350px;
-		color:black;
-		font-family: 'Kalam', cursive;
+											
+											/*////////// portfolio ////////////*/
 		
-	}
-#shadowImg
-	{	
-		background-image: url("images/shadow.jpg");
-		margin-left:100px;
-		margin-top:140px;
-		margin-bottom:10px;
-		width:300px; 
-		border: 1px solid gray;
-		border-radius:10px; 
-		height:285px;
-	}
-#shadowsP
-	{
-		width:600px;
-		line-height:1.5em;
-	    margin-left:600px;
-		margin-top:-320px;
-		color:black;
-		font-family: 'Kalam', cursive;
+							
+														.slider2, .slider3, .slider4, .slider5, .slider6, .slider7, .slider8
+														.slider2, .slider3, .slider4, .slider5, .slider6, .slider7, .slider8
+															{
+																/*width:90%;*/
+																height:40%; 
+																 
+															}
+														
+														#portfoliosliders img
+															{
+																background-color:gray;
+																border:2px solid gray;
+																padding:1%; 
+																width:290px; 
+																height:290px;
+																margin:auto;
+															}
+														#portfoliosliders
+															{
+																background-color:#355a79;
+																/*height:auto;  */
+																width:100%;
+																text-align:center; 
+															}
+														#slider2title, #slider3title, #slider4title, #slider5title, #slider6title, #slider7title, #slider8title
+															{
+																text-align:center;
+																color:white;
+																margin-bottom:1%;
+															}
+														.slider8 {margin-bottom:-1%;}
+											
+											
+																/*////// faces in food ///////   */
+																
+																
+
+														#facesInFood
+															{
+																background-color:#3f6a8f;
+																font-family: 'ZCOOL XiaoWei', serif;
+																
+																
+															}
+														.slider10
+															{
+																width:95%;
+																height:100%; 
+																overflow-y:scroll;
+																margin-bottom:-1%;
+															}
+														 #facesInFood img
+															{ 
+															 	background-color:gray;
+																border:2px solid white;
+																padding:1%; 
+																width:280px; 
+																height:260px;
+																position: relative;
+																left: 28%;
+									`						}
+														
+														
+														#slider10recipe
+															{
+																color:white;
+																height:110%; 
+																width:100%;
+																overflow-y:scroll;
+																font-size:.9em;
+																margin-left:5%;
+															}
+
+														#slider10title
+															{
+																width:100%;
+																text-align:center;
+																color:white;
+															}
+														#norecipeimage
+															{
+																margin-left:00%; 
+																margin-top:0px;
+															}
+															
+															
+															/*///////stories///////////*/
+
+														#stories
+															{
+																background-color:#3f6a8f;
+																font-family: 'ZCOOL XiaoWei', serif;
+																height:150%;
+															}
+														#creativestories
+															{
+																background-color:#3f6a8f;
+															}
+														#creativestories img
+															{
+																width:45%;
+																margin-left:30%;
+															}
+														#creativestories p 
+															{
+																font-size:1.9em; 
+																text-align:center;
+															}
+														#stories h2
+															{
+																background-color:#3f6a8f;
+																width:100%;
+																color:white;
+																height:7%;
+																text-align:center;
+																font-size:1.9em;
+															}
+														#wendylink
+															{
+																width:90%; 
+																background-color:#3f6a8f;
+																padding:2%;
+															}
+														
+														#baileylink
+															{
+																width:90%; 
+																background-color:#3f6a8f;
+																padding:2%;
+															}
+														#mushroomlink
+															{
+																width:90%; 
+																background-color:#3f6a8f;
+																padding:2%;
+															}
+														#stories a:link
+															{
+																color:white;
+															}
+														#stories a:hover
+															{
+																color:black;
+															}
+														#stories a:visited {color:white;}
+													
+
+													
+														/*////// wendy //////*/
+														
+														
+														#wendyPage
+															{
+																background-color:#3f6a8f;
+																font-family: 'ZCOOL XiaoWei', serif;
+																height:300%;
+																color:white;
+																text-align:justify;
+																overflow-y:scroll;
+																line-height:1em;
+																width:100%;
+																float:left;
+																padding-left:10px;
+																font-size:1em;
+															}
+														#wendyPage img	
+															{
+																width:40%;
+															}
+														#wendystory
+															{
+																line-height:1em;
+																width:90%;
+																float:left;
+																padding-left:10px;
+															}
+														#wendyfullpage
+															{
+																line-height:1em;
+																width:90%;
+																float:left;
+																padding-left:10px;
+															}
+														#wendyImg
+															{
+																padding-top:5%;
+																margin-top:2%;
+																margin-left:3%;
+															}
+														#turtleimg
+															{
+																display:none;
+															}
+															
+															
+														/*/////////// mushroom story  ///////*/
+
+
+														#mushroomPage		
+															{
+																background-color:#3f6a8f;
+																font-family: 'ZCOOL XiaoWei', serif;
+																height:auto;
+																color:white;
+																text-align:justify;
+																overflow-y:scroll;
+																line-height:1.2em;
+																width:90%;
+																float:left;
+																padding:5%;
+																font-size:1em;
+																
+															}
+														#mushroomPage h1
+															{
+																text-align:center;
+																line-height:1.2em;
+															}
+														#mushroomImg
+															{
+																width:40%;
+																margin-left:2%;
+																margin-top:2%;
+																border: 2px solid gray;
+																border-bottom-style:inset;
+															}	
+														#fredfungiImg
+															{
+																width:40%;
+																margin-left:2%;
+																margin-top:2%;
+																border: 2px solid gray;
+																border-bottom-style:inset;
+															}
+
+															/*////////Bailey Story//////*/
+
+
+
+														#baileypage
+															{
+																background-color:#3f6a8f;
+																font-family: 'ZCOOL XiaoWei', serif;
+																height:auto;
+																color:white;
+																text-align:justify;
+																overflow-y:scroll;
+																line-height:1.2em;
+																width:90%;
+																float:left;
+																padding:5%;
+																font-size:1em;
+																
+															}
+														#baileystory1 h1
+															{
+																text-align:left;
+																line-height:1.2em;
+															}
+																
+														#baileyimg	
+															{
+																width:40%;
+																float:left;
+																margin-left:5%;margin-right:2%;
+																margin-top:9%;
+																border:4px solid gray;
+																background-color:black;
+															}
+														#fenceimage
+															{
+																border:2px solid gray;
+																border-style:inset;
+																float:right;
+																margin-right:8%;
+																margin-left:2%;
+																margin-top:-2%;
+															}
+
+														/*///////////  hiking  ///////////*/
+			
+						
+														#hikingpage
+															{
+																background-color:#3f6a8f;
+																font-family: 'ZCOOL XiaoWei', serif;
+																overflow:scroll;
+																height:auto;
+																padding-top:.5%;
+																color:white;
+															}
+														#hikingchick21smallImg
+															{
+																margin-top:5%;
+																margin-left:5%;
+																width:90%;	
+																float:left;z-index:1;display:block;position:relative;
+															}
+														#hikingleft  /*  this is the form portion of the page */
+															{
+																position:relative;
+																left:0%;
+																background-color:#3f6a8f;
+																font-size:1.2em; 
+															}
+														#hikingleft h3
+															{
+																line-height:1.5em;
+															}
+														#hikingleft form 
+															{	
+																position:relative;
+																height:auto;
+																overflow:scroll;
+																text-align:left;
+																width:90%;
+																line-height:50%; 
+																margin-left:7%;
+															}
+														#hikingright  /* this is the list of user submitted hikes */
+															{
+																position:relative;
+																float:left;
+																left:.0%;
+																top:-60%;
+																width:100%;
+																overflow-y:scroll;
+																color:white;
+															}
+														#hikingright h2
+															{
+																margin-left:0%;
+																width:100%;
+																font-size:1.5em;
+																text-align:center;
+															}
+														#hikingpage a
+															{
+																color:white; 
+																font-weight:bold; 
+																font-size:1.2em;
+															}
+														#hikingpage a:hover
+															{	
+																color:black;
+															}
+															
+															/*///////   readerhikes  ///////*/
+							
+
+														#readerhike
+															{
+																background-color:#3f6a8f;
+																font-family: 'ZCOOL XiaoWei', serif;
+																height:70%; 
+																padding-top:.5%;
+																color:white;
+															}
+														#hikename
+															{
+																
+																background-color:#3f6a8f;
+																width:90%;
+																text-align:left;
+																float:left;
+																margin-top:8%;
+																margin-left:5%;
+																overflow-y:scroll;
+																font-size:1.2em;
+															}
+														#hikerimage
+															{
+																float:left;
+																margin-left:10%;
+																margin-top:8%;
+															}	
+															
+														/*/////////// readers pages submissions  ///////*/
+
+														#readersPage
+															{
+																background-color:#3f6a8f;
+																font-family: 'ZCOOL XiaoWei', serif;
+																overflow:scroll;
+																height:auto;
+																padding-top:.5%;
+																color:white;
+															}
+														.slider9
+															{
+																display:none;  /*do not display the larger slider in cell phone sized screens */
+															}
+														.slider11
+															{
+																width:70%; 
+																margin-left:18%; 
+																font-size:1.2em; 
+																overflow:scroll;
+																height:auto;
+															}
+														.slider11 img
+															{
+																width:90%;
+																height:55%;margin-top:8%;
+															}
+														#slider9title
+															{
+																position:relative;
+																top:1%;
+																left:9%;
+																width:80%;
+																color:white;
+																text-align:center;
+																padding-top:1%;
+																font-size:1.2em;
+															}	
+														#readersPageP
+															{
+																color:white;
+																width:55%;
+																line-height:1.5em;
+																font-size:1em;
+																margin-left:23%;
+																margin-top:-23%;
+																float:left;
+															}
+														#readersPageP h2
+															{
+																text-align:center;
+															}
+														#readersPageP p
+															{
+																width:100%;
+																text-align:center;
+																font-size:1.3em;
+															}
+														#readersPageForm
+															{
+																margin-top:-5%;
+																float:left;
+																width:65%;
+																overflow:scroll;
+																height:auto;
+																margin-left:15%; 
+																text-align:left;
+																padding:1%;  
+																font-size:1.1em;
+															}
+														#readersPageForm p 
+															{font-size:1.2em;}
+														/*#readerssubmissions
+															{
+																width:1000px;
+																float:right;  
+																text-align:center;
+																margin-top:50px;
+															}	*/
+														#name, #postTitle, #postContent, #readersemail
+															{
+																background-color:white;
+																color:black;
+															}
+														#hiking #name, #postContent
+															{
+																background-color:white;
+																color:black;
+																/*this is here to prevent green backgrounds in the form in hikers pages*/
+															}
+														.error
+															{				
+																color:red;
+																width:800px;
+																position:absolute;
+																top:0%;
+																left:4%;
+															}	
+																						
+															/*////////  books  /////////*/
 		
-	}
-#shadowsh1
-	{
-		margin-left: 120px;
-		width: 240px;
-		color:#323EA6
-	}
-#snowImg
-	{	
-		background-image: url("images/mountains/snowshoe.jpg");
-		margin-left:100px;
-		margin-top:160px;
-		margin-bottom:40px;
-		width:300px; 
-		border: 1px solid gray;
-		border-radius:10px; 
-		height:285px;
-	}
-#snowh1
-	{
-		margin-left: 120px;
-		width: 240px;
-		color:#323EA6;
-	}
-#snowP
-	{
-		width:600px;
-		line-height:1.5em;
-	    margin-left:600px;
-		margin-top:-420px;
-		color:black;
-		font-family: 'Kalam', cursive;
-		
-	}
-#naturefacts
-	{
-		color:black;
-		font-size:1.2em;
-	}
-*/
+														#bookbanner
+															{
+																width:100%;
+																
+																
+															}
+														#coverImg
+															{
+																float:left;
+																margin-top:170px;
+																margin-left:1%;width:40%;
+															}
+														#content
+															{
+																font-family: 'ZCOOL XiaoWei', serif;
+																background-image: url("images/EvaWebsiteBGYellowGreen.png"); 
+																height:1490px;
+																margin-top:0%; overflow-y:scroll;
+															}
+														#paypal
+															{
+																float:right;
+																margin-right:3%; 
+																margin-top:2%;
+																text-align:center; 
+																
+															}
+														#paypal table
+															{
+																margin-left:2%;
+															}
+														#purchaseoptions
+															{
+																margin-left:10%;
+															}
+														#aboutbook
+															{ 
+																float:right;
+																width:50%;
+																font-size:1.2em;
+																margin-top:-1%;
+																margin-right:5%;
+																line-height:1.4em; 
+																text-align:justify;
+															}
+														#aboutbook h4 {text-align:left;  line-height:1em;}
+														#authorEvaImg
+															{
+																float:left; 
+																margin-right:5%;
+																border:5px solid gray;
+																border-style: inset;
+															}
+														#aboutEva
+															{
+																float:left;
+																margin-left:1%;
+																width:90%;
+																font-size:1.2em;
+																margin-top:0%;
+																line-height:1.4em;
+																text-align:justify;
+																padding-right:3%;
+																padding-left:3%;
+															}
+														#aboutEva p, h4
+															{
+																margin-top:-2%;
+															}
+														#aboutMichelle
+															{
+																float:right;
+																margin-right:1%;
+																width:90%;
+																font-size:1.2em;
+																margin-top:4%;
+																line-height:1.4em;
+																text-align:justify;
+																padding-right:3%;
+																padding-left:3%; 
+															}
+														#aboutMichelleImg
+															{
+																float:right; 
+																margin-left:5%;
+																border:5px solid gray;
+																border-style: inset;
+															}
+														#aboutMichelle p, h4
+															{
+																margin-top:.5%;
+															}
+														#bookisbn
+															{
+																float:right;	
+																width:45%;
+																margin-top:0%;
+																margin-right:5%;
+															}
+														#smallbookimage
+															{
+																
+																float:left;
+																border:5px solid gray;
+																border-style: inset;
+																margin-left:10%;
+																margin-top:3%;
+															}
+															
+															
+																	/*//////////    contact ///////////*/
+																	
+																	
+														#waterbackground
+															{
+																width:100%;
+																height:20%;
+															}
+														.contact
+															{	
+																font-family: 'ZCOOL XiaoWei', serif;
+																text-align:center; 
+																line-height:1.2em;
+																font-size:1.1em;
+															}
+														.contact h1
+															{
+																text-align:center;
+																width:50%;
+																margin-left:25%;
+																margin-top:5%;
+															}
+														.contact hr
+															{
+																width:25%;
+																border: 5px solid #355a79;
+																border-radius: 5px;
+																color:#bb2b0c;
+															}
+														.contact img
+															{
+																border-radius:50%;
+															}
+														.contact a
+															{
+																color:black;
+															}
+														.contact a:hover
+															{
+																color:darkblue;
+															}
+														
+														#contactemaildiv
+															{
+																width:25%;
+																height:50%;
+																text-align:center;
+																margin-top:5%;
+																margin-left:2%;
+																float:left;
+																
+																padding-right:2%;
+																padding-bottom:8%;
+															}
+														#contactformdiv
+															{
+																width:35%;
+																float:left;
+																margin-left:3%;
+																margin-top:5%;
+																text-align:left;
+																
+																padding-right:3%;
+																line-height:.6em;
+															}
+														#contactformdiv form
+															{
+																padding-left:18%;
+															}
+														#contactformdiv h2
+															{
+																text-align:center;
+															}
+														 #contactfirstname, #contactlastname, #contactformdiv #contactemail, #contactmessage
+															{
+																background-color:#355a79;
+																color:white;	 
+																font-weight: bold;
+															}
+														#contacthikelink
+															{
+																width:25%;
+																float:right;
+																margin-top:5%; text-align:center;
+															}
+				
 	
-													/*///////creative stories////////*/
-#stories
-	{
-		background-color:#14402B;
-		font-size:2em; 
-		height:350px;
-	}
-#wendylink
-	{
-		width:300px; 
-		float:left;
-		margin-top:30px;
-		margin-left:90px;
+															
+															
+											}
+											
+											
+											
+											
+											
+											
+											
+											/*/////////////  full screen size ///////////*/
+
+@media screen and (min-width: 1025px) 
+	{		
+
+		head, section, footer, nav, figure, figcaption {display: block;}
+		body 
+			{
+				/*font-family:  'ZCOOL XiaoWei', serif;*/
+				line-height: 1em;
+				font-size: 1em;
+			}
+		head
+			{
+				width:100%;
+				
+			}
+		#wrapper
+			{
+				width:100%;  /*overflow:scroll;*/max-width:1300px;
+			}
+																	/*/////////NAV/////////*/
+		#nav2
+			{
+				color:#64593e;
+				font-family:  'ZCOOL XiaoWei', serif;
+			}
+		#nav2 li
+			{
+				display: inline;
+				margin-right: 3px; 
+				margin-left:1px; 
+				padding-left:5px; 
+				padding-right:5px;
+				font-size: 1.2em; 
+				color:#64593e; 
+			}
+	
+		#nav2 a:link 
+			{
+				text-decoration: none; 
+				color:#64593e; 
+			}
+		#nav2 a:hover
+			{
+				color:black;
+				text-decoration:underline;
+			}
+		#nav2 a:visited {color:#3f6a8f;}
 		
-	}
-#baileylink
-	{
-		width:300px;
-		float:right; 
-		margin-top:100px;
-		margin-right:90px;
-		 
-	}
-#mushroomlink
-	{
-		width:300px;
-		float:right; 
-		margin-top:30px;
-		margin-right:60px;
+		#title li
+			{
+				display:inline;  /*this keeps the dumb bullet out */
+			}
+
+
+
+																/* /////  index.php /////  */
+
 		
-	}
-#stories a:link
-	{
-		color:black;
-	}
-#stories a:hover
-	{
-		color:white;
-	}
-#storiesnav
-	{
-		position:relative;
-		top:-420px;
-	}
-
-												/*///////hiking  ///////*/
-
-#hiking
-	{
-		background-color:#D9E1E7;
-		font-family: 'ZCOOL XiaoWei', serif;
-		font-size:1em;
-		color:black;
-		width:589px;
-		height:610px;
-		line-height:1.5em;
-		padding:10px;
-		float:left; 
+		#title
+			{
+				font-family: 'Dancing Script', cursive;
+				color:#141831;
+				width:100%;
+				text-align:center;
+				font-size:2em; max-width:1200px;
+			}
+		#title a
+			{
+				text-decoration: none; 
+				color:#141831;
+			}
+		#title a:link
+			{
+				text-decoration: none; 
+			}
 		
-	}
-#hikingimg
-	{
-		position:relative;
-		top:-10px;
-		left:0px;
-		margin-bottom:-10px;
-	}
-#hikingnav
-	{
-		position:relative;
-		top:-453px;
-		left:-10px;
-		width:1300px;
-	}
-#hikes
-	{
-		width: 591px;
-		height:630px;
-		float:right;
-		background-color:#D9E1E7;
-		overflow:scroll;
-	}
-#hikingfooter
-	{
-		height:200px;
+		#backgroundimg
+			{
+				position:relative;
+				z-index:-1;
+				width:100%;
+				height:100%;
+			}
+		#welcome1
+			{
+				font-family: 'ZCOOL XiaoWei', serif;
+				background-color:#3f6a8f;
+				color:white;
+				width:25%;
+				line-height:1.5em;
+				font-size:1em;
+				position:relative;
+				z-index:1;
+				margin-left:3%;
+				margin-top:-63%;
+				text-align:justify;
+				padding:2%;
+				float:left;
+				opacity:.8;
+				border-radius:2px;
+			}
 		
-	}
-
-/*more hiking style formatting below under readerspages. */
-
-
-
-
-														/*///////   readerhikes  ///////*/
-#readerhike
-	{
-		background-color:#D9E1E7;
-		position:relative;
-		top:-10px;
-		font-family: 'ZCOOL XiaoWei', serif;
-		font-size:1em;
-		color:black;
-		width:1140px;
-		height:auto;
-		line-height:1.5em;
-		padding:30px;
-		float:left;
-		margin-bottom:-10px;
-	}
-#hikesimg
-	{
+		#welcome2
+			{
+				font-family: 'ZCOOL XiaoWei', serif;
+				color:white;
+				background-color:#3f6a8f;
+				width:25%;
+				line-height:1.5em;
+				font-size:1em;
+				position:relative;
+				z-index:1;
+				margin-left:35.5%;
+				margin-top:-63%;
+				text-align:justify;
+				padding:2%;
+				float:left;
+				opacity:.8;
+				border-radius:2px;
+			}
+		#welcome3
+			{
+				font-family: 'ZCOOL XiaoWei', serif;
+				background-color:#3f6a8f;
+				color:white;
+				width:25%;
+				line-height:1.5em;
+				font-size:1em;
+				position:relative;
+				z-index:1;
+				margin-right:3%;
+				margin-top:-63%;
+				text-align:justify;
+				padding:2%;
+				float:right;
+				opacity:.8;
+				border-radius:2px;
+			}
+		#welcome1 h2, #welcome2 h2, #welcome3 h2, #welcome4 h2, #donna h2
+			{
+				text-align:center;
+			}
 		
-	}	
-
-
-														/*//////  wendy  /////*/ 
-
-#wendyPage
-	{
-		background-color:#F9F9DC; 
-		width:1180px;
-		padding:10px; 
-	}
-
-#greenlakeImg
-	{
-		width:1200px;
-		height:387px;
-		margin-bottom:10px;
-	}
-#wendystory
-	{
-		 
-		color:#006837;
-		line-height:1.5em;
-		font-size:1.2em;
-		width: 575px;
-		margin-left:350px;  
-		margin-top:-330px;
-		float:right;
-		padding:10 10 10 10px;   
-	}
-#wendyfullpage
-	{
+		.row
+			{
+				width:85%;
+				background-color:#345877;
+				margin-top:-25%;
+				float:left;
+				margin-left:7.5%;
+				border:5px solid gray;
+				border-style:inset;
+			}
+		.row img
+			{
+				
+				width:24.6%;
+			}
+		#image3, #image4
+			{
+				float:left; 
+			}
+		#image4
+			{
+				padding-left:5px;
+			}
 		
-		color:#006837;
-		line-height:1.5em;
-		font-size:1.2em;
-		width: 1190px;
-		margin-top:0px;
-		float:left;
-	}
-#wendyImg
-	{
-		width:300px; 
-		margin-top:100px;
-		margin-left:50px;
-	}
-#turtleimg
-	{
-		width:350px;
-		float:right;
-		position: relative;
-		top: -50px;
-	}
-#rainierImg
-	{
-		width:350px;
-		float:right;
-	}
-#birdflowerImg
-	{
-		width:350px;
-		float:left; 
-	}
-#waterfallImg
-	{
-		width:400px;
-		float:right;
-	}
-#submissions
-	{
-		color: #003C00;
-	}
-
-
-
-												/*///////////Mushrooms Story///////*/
-#mushroomPage		
-	{
-		background-color:#F9F9DC; 
-		width:1180px;
-		padding:10px; 
-	}
-#mushroomImg
-	{
-		width:225px; 
-		margin-top:120px;
-		margin-left:30px; 
-	}	
-#fredfungiImg
-	{
-		width:400px;
-		float:right;
-		margin-right:60px;
-	}
-#mushroomstory
-	{
-		 
-		color:#411D07;
-		line-height:1.5em;
-		font-size:1.2em;
-		width: 675px;
-		margin-left:320px;  
-		margin-top:-330px;
-		float:left;
-		padding:10 10 10 10px;   
-	}
-#mushroomstory1
-	{
+		#image1, #image2
+			{
+				float:left; 
+				padding-right:5px;
+			}
 		
-		color:#411D07;
-		line-height:1.5em;
-		font-size:1.2em;
-		width: 675px;
-		margin-left:0px;  
-		margin-top:-20px;
-		float:left;
-		padding:10 10 10 10px;   
-	}
-#mushroomstory2
-	{
-		 
-		color:#411D07;
-		line-height:1.5em;
-		font-size:1.2em;
-		width:1055px;
-		margin-left:0px;  
-		margin-top:-20px;
-		float:left;
-		padding:10 10 10 10px;   
-	}
-
-											  /*////////Bailey Story//////*/
-#baileypage
-	{
-		background-color:#F9F9DC; 
-		width:1180px;
-		padding:10px; 
-	}
-#baileystory
-	{
-		 
-		color:#2A352C;
-		line-height:1.5em;
-		font-size:1.2em;
-		width: 700px;
-		margin-left:350px;  
-		margin-top:-270px;
-		float:right;
-		padding:10 10 10 10px;   
-	}
-#fenceimg	
-	{
-		width:400px;
-		float:left;
-		margin-left:40px;
-		margin-top:45px; border:1px solid black;
-	}
-#baileyfullpage
-	{
-		float:left;
-		margin-left:-400px;
-	}
-
-
-
-											/*////// readers pages //////  */
-
-
-#readersPage
-	{
 		
-		color:#003C00;
-		margin-top:20px; 
-	}
-.readersPageP
-	{
-		margin-left:20px;
-		text-align:center;
-		font-size:1.2em;
-	}
-#readersPageForm
-	{
-		margin-top:50px;
-		float:left;
-		width:500px;
-		height:500px;
-		margin-left:40px; 
-		text-align:left;
-		padding:20px; 
-	}
-#readerssubmissions
-	{
-		width:500px;
-		float:right;  
-		text-align:center;
-		margin-top:50px;
-	}	
-#name, #postTitle, #postContent, #readersemail
-	{
-		background-color:#003C00;
-		color:white;
-	}
-#hiking #name, #postContent
-	{
-		background-color:white;
-		color:black;
-		/*this is here to prevent green backgrounds in the form in hikers pages*/
-	}
-#readersnav
-	{
-		position:relative;
-		top:-430px;
-	}
-.error
-	{
+																
+																/*///////donna//////*/
+																	
+																	
+		#donnapage
+			{
+				width:auto;
+				background-image: url("images/waterbackground.jpg");
+				height:100%;
+				max-height:100%;max-width:1300px;
+			}
+		#donnaImg 
+			{ 	
+				float:right;
+				width:15%; 
+				margin-top:10%;
+				margin-right:15%;
+				border:5px solid gray;
+				border-style:inset;
+			}
+		#donna
+			{
+				background-color:#3f6a8f;
+				width:35%;
+				
+				z-index:.9;
+				padding:2%;
+				float:left;
+				opacity:.7;
+				border-radius:2px;
+				font-family: 'ZCOOL XiaoWei', serif;
+				color:white;
+				line-height:1.5em;
+				margin-left:7%;
+				margin-top:4%;
+				text-align:justify;
+				font-size:1em; max-height:45%; overflow:scroll;
+			}
+		#donna p
+			{
+				font-weight:bold; z-index:1;
+			}
 		
-		color:red;
-		width:500px;
-	}
-
-.slider9.slick-dots
-	{
-		position: absolute;
-		bottom: 50px;
-		display: block;
-		width: 100%;
-		padding:10px;
-		list-style: square;
-		text-align: center;
-	}
-.slider9
-	{
-		width:300px;
-		height:400px;
-		position:absolute;
-		left:740px; 
-		top:740px; 
-		color:black;  
-		text-align:left;
-	}
-#slider9title
-	{
-		margin-left:-130px; 
-		width:600px;
-	}	
-													/*//////evas form/////// */
-#evasForm
-	{
+		#donnapage .row {display:none;}
 		
-	}
-#portfolioform
-	{
-		width:500px;
-		float:right;
-		margin-top:10px;
-		margin-right:50px;
-	}
-#readersimageform
-	{
-		margin-top:20px;
-		width:500px;
-		float:left;
-		margin-left:20px;
-	}
-#removemountainimageform		
-	{
+		#photographybydonnaimages{display:none;}  /*this only appears on the cell phone sized screens*/
+		/*.slider
+			{	
+				background-color:gray;
+				border:1px solid white;
+			}
+		.slider img
+			{
+				width:400px;
+				height:400px;
+				max-width:400px;
+				max-height:400px;
+				margin:3px;
+			}*/
+		#donnaphotolarge
+			{
+				position:absolute;
+				top:75%;
+				left:10%;
+				width:620px;
+				height: 200px;
+				
+			}
+		#donnaphotolarge fieldset	
+			{	
+				color:white;
+				height:200px;
+				font-size:1.2em;padding-left:5%;
+			}	
+		#donnaphotolarge img
+			{
+				width:175px;
+				height:175px;
+				border:4px solid gray;
+				border-style:inset;max-height:200px;
+			}
 
-		width:500px;
-		height:200px;
-		float:right;
-		margin-right:100px;
-	}
-#removetreeimageform
-	{
-		width:500px;
-		height:200px;
-		float:left;
-		margin-left:20px;
-	}
-#removecloudimageform		
-	{
-		width:500px;
-		height:200px;
-		float:right;
-		margin-right:100px;
-	}
-#removefungiimageform
-	{
-		width:500px;
-		height:200px;
-		float:left;
-		margin-left:20px;
-	}	
-#removeleavesimageform		
-	{
-		width:500px;
-		height:200px;
-		float:right;
-		margin-right:100px;
-	}	
-#removerocksimageform
-	{
-		width:500px;
-		height:200px;
-		float:left;
-		margin-left:20px;
-	}
-#removeotherimageform		
-	{
-		width:500px;
-		height:200px;
-		float:right;
-		margin-right:100px;
-	}	
-#removefoodimageform
-	{
-		width:500px;
-		height:200px;
-		float:left;
-		margin-left:20px;
-	}
-#recipeform		
-	{
-		width:475px;
-		height:200px;
-		float:right;
-		margin-right:50px; 
-		padding:10px;
-		margin-top:20px;
-	}
-#hikersform
-	{
-		width:500px;
-		height:700px;
-		float:left;
-		margin-left:20px;
-	}
-#removehiker		
-	{
-		width:450px;
-		height:100px;
-		float:left;
-		margin-left:80px; 
-	    margin-top:-20px;
-	}
 
-													/*////// faces in food ///////   */
 
-#facesInFood
-	{
+																	/*/////portfolio  //////*/
+
 		
-		height:1000px;
-		background-color:#CAB9AB;
-	}
-.slider10
-	{
-		width:55%;
-		/*height:400px;*/
-		position:absolute;
-		left:250px; 
-		top:500px; 
-		color:black; 
-		display:block;
-		margin-left:auto;
-		margin-right:auto;
-	}
-#slider10recipe
-	{
-		color:#4D3F34;
-		float:right;
-		position:absolute;
-		top:00px;
-		left:310px;
-		font-weight:lighter;
-	}
+		#portfoliosliders
+			{
+				font-family: 'ZCOOL XiaoWei', serif;
+				background-image: url("images/waterbackground.jpg");
+				background-repeat:no-repeat;
+				background-color:#345877;  
+				height:1245px; 
+				padding-top:.5%;
+				color:white;max-width:1300px;
+			}
+		#portfoliosliders img
+			{
+				background-color:gray;
+				border:2px solid white;
+				padding:2%; 
+				width:300px; 
+				height:280px;
+			}
+		.slider2
+			{	display:inline-block; position:relative;
+				width:355px; 
+				height:280px;
+				float:left;
+				margin-left:1%;
+			}
+		#slider2title
+			{
+				width:25%;
+				margin-top:2%;
+				margin-left:6%;
+			}
+		.slider3
+			{
+				width:355px;
+				height:280px;
+				/*float:left;*/
+				margin-left:35%;
+				margin-top:0%;
+			}
+		#slider3title
+			{
+				width:25%;
+				margin-top:-3%;
+				margin-left:42%;
+			}
+		.slider4
+			{
+				width:355px;display:inline-block;
+				height:280px;
+				float:right;
+				margin-top:-23%;
+				margin-right:3%;
+			}
+		#slider4title
+			{
+				width:25%;
+				margin-top:-26%;
+				margin-right:0%;
+				float:right;				
+			}
+		.slider5
+			{
+				width:355px;
+				height:280px;
+				float:left;
+				margin-left:1%;
+			}
+		#slider5title
+			{
+				width:25%;
+				margin-top:6%;
+				margin-left:6%;
+			}
+		.slider6
+			{
+				width:355px;
+				height:280px;
+				float:left;
+				margin-left:7%; 
+			}
+		#slider6title
+			{
+				width:25%;
+				margin-top:-3%;
+				margin-left:42%; 
+			}
+		.slider7
+			{
+				width:355px;
+				height:240px;
+				float:right;
+				margin-top:0%;
+				margin-right:3%;
+			}
+		#slider7title
+			{
+				width:25%;
+				margin-top:-3%;
+				margin-right:0%;
+				float:right;	
+			}
+		.slider8
+			{
+				width:355px;
+				height:280px;
+				float:left;
+				margin-left:35%;
+			}
+		#slider8title
+			{
+				width:35%;
+				margin-top:30%;
+				margin-left:35%; 
+			}
+				
+	
+															/*/////// stories////////*/
+		#stories
+			{
+				background-image: url("images/waterbackground.jpg");
+				font-size:1.5em; 
+				height:1000px;
+				margin-top:-1%;
+				font-family: 'ZCOOL XiaoWei', serif;
+				color:white;
+				text-align:center;max-width:1300px;
+			}
+			
+		#stories h2
+			{
+				background-color:#3f6a8f;
+				position:relative;
+				top:5%;
+				left:30%;
+				width:40%;
+				color:white;
+				height:7%;
+				opacity:.7;
+				border-radius:2px;
+				text-align:center;
+				padding-top:5%;
+				font-size:1em;
+			}
+		#wendylink
+			{
+				width:20%; 
+				float:left;
+				margin-top:6%;
+				margin-left:5%;
+				background-color:#3f6a8f;
+				border-radius:2px;
+				padding:2%;
+			}
+		#baileylink
+			{
+				width:20%;
+				float:left; 
+				margin-top:6%;
+				margin-left:9%;
+				background-color:#3f6a8f;
+				border-radius:2px;
+				padding:2%;
+			}
+		#mushroomlink
+			{
+				width:20%;
+				float:right; 
+				margin-top:6%;
+				margin-right:5%;
+				background-color:#3f6a8f;
+				border-radius:2px;
+				padding:2%;
+			}
+		#stories a:link
+			{
+				color:white;
+			}
+		#stories a:hover
+			{
+				color:black;
+			}
+		#stories a:visited
+			{
+				color:white;
+			}
 
-#slider10title
-	{
-		margin-top:30px;
-		margin-left:350px; 
-		width:600px;
-		color:#4D3F34;
-	}
+														/*///////  hiking  ///////*/
 
-											/*////// footer ////// */
+		#hikingpage
+			{
+				font-family: 'ZCOOL XiaoWei', serif;
+				background-image: url("images/waterbackground.jpg");
+				background-repeat:no-repeat;
+				 max-width:1300px; 
+				height:120%; 
+				padding-top:.5%;
+				color:white;
+			}
+		#hikingchick21smallImg
+			{
+				margin-top:5%;
+				margin-left:5%;
+				width:40%;
+				height:25%;
+				float:left;
+			}
+		#hikingleft
+			{
+				position:relative;
+				left:-40%;
+				top:35%;
+			}
+		#hikingright
+			{
+				position:relative;
+				float:right;
+				right:1%;
+				top:-40%;
+				width:45%;
+				overflow-y:scroll;
+				color:white;
+			}
+		#hikingright h2
+			{
+				height:5%;
+				background-color:#3f6a8f;
+				width:80%;
+				border-radius:2px;
+				text-align:center;
+				padding-top:5%;
+				opacity:.9;
+			}
+		#hikingpage a
+			{
+				color:white; font-weight:bold;
+			}
+		#hikingpage a:hover
+			{	
+				color:#3f6a8f;
+			}
+		#hikingpage fieldset
+			{
+				width:500px;
+			}
+
+		/*more hiking style formatting below under readerspages. */
 
 
-footer 
-	{
-		font-family:'ZCOOL XiaoWei', serif;; 
-		color: #343756; 
-		background-color:#998675;
-		width:1175px;
-		font-size: 100%; 
-		padding: 15px 15px 15px 10px;
-		border:1px solid #999; 
-		-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-		-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-		box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-		line-height:50%; 
-		height:345px; 
-		clear:both;
+
+
+													/*///////   readerhikes  ///////*/
+		#readerhike
+			{
+				background-image: url("images/smallwaterbackground.jpg");
+				background-repeat:no-repeat;
+				font-size:1em; 
+				height:800px;
+				margin-top:%;
+				font-family: 'ZCOOL XiaoWei', serif;
+				color:white;
+				font-weight:bold;max-width:1300px;
+			}
+		#hikename
+			{
+				
+				background-color:#3f6a8f;
+				width:50%;
+				border-radius:2px;
+				text-align:center;
+				padding-top:;
+				opacity:.9;
+				float:right;
+				margin-top:8%;
+				margin-right:5%;
+				overflow-y:scroll;
+			}
+		#hikerimage
+			{
+				float:left;
+				margin-left:10%;
+				margin-top:8%;
+			}
+
+
+																/*//////  wendy  /////*/ 
+
+		#wendyPage
+			{
+				background-image: url("images/waterbackgroundextralarge.jpg");
+				background-repeat:no-repeat;
+				font-size:1em; 
+				height:2000px;
+				margin-top:%;
+				font-family: 'ZCOOL XiaoWei', serif;
+				color:white;
+				font-weight:bold;
+				text-align:justify;max-width:1300px;
+				overflow-y:scroll; /*vertical overflow */
+			}
+		#wendyPage img	
+			{
+				width:300px;
+				height:;
+			}
+		#wendystory
+			{
+				color:white;
+				line-height:1em;
+				width:68%;
+				margin-top:-23%;
+				float:right;
+				padding:10 15 10 10px;   
+			}
+		#wendyfullpage
+			{
+				color:white;
+				line-height:1.5em;
+				width:95%;
+				margin-top:-2%;
+				padding:10 10 10 20px;
+				float:left;
+			}
+		#wendyImg
+			{
+				padding-top:5%;
+				margin-top:2%;
+				margin-left:3%;
+			}
+		#turtleimg
+			{
+				
+				float:right;
+				position: relative;
+				margin-top:-12%;
+				margin-left:1%;
+			}
+		#rainierImg
+			{
+				width:350px;
+				float:right;
+			}
+		#birdflowerImg
+			{
+				width:350px;
+				float:left; 
+			}
+		#waterfallImg
+			{
+				width:400px;
+				float:right;
+			}
+		#submissions
+			{
+				color: #003C00;
+			}
+
+
+
+														/*///////////Mushrooms Story///////*/
+		#mushroomPage		
+			{
+				background-image: url("images/smallwaterbackground.jpg"); 
+				max-height:800px;
+				background-repeat:no-repeat;
+				 
+				text-align:justify;
+				font-family: 'ZCOOL XiaoWei', serif;
+				color:white;
+				overflow-y:scroll;
+				max-width:1300px;
+			}
+		#mushroomImg
+			{
+				display:block;
+				margin-top:7%;
+				margin-left:4%;
+			}
+		#fredfungiImg
+			{
+				display:block;
+				width:350px;
+				float:right;
+				margin-right:10%;
+			}
+		#mushroomstory
+			{
+				line-height:1.5em;
+				font-size:1.2em;
+				width: 800px;
+				margin-left:330px;  
+				margin-top:-300px;
+				float:left;
+				padding:10 10 10 10px;   
+			}
+		#mushroomstory1
+			{
+				line-height:1.5em;
+				font-size:1.2em;
+				width: 750px;
+				margin-left:10px;  
+				margin-top:-50px;
+				float:left;
+				padding:10 10 10 10px;   
+			}
+		#mushroomstory2
+			{
+				line-height:1.5em;
+				font-size:1.2em;
+				width:1055px;
+				margin-left:10px;  
+				margin-top:-20px;
+				float:left;
+				padding:10 10 10 10px;   
+			}
+
+
+
+													  /*////////Bailey Story//////*/
+
+
+		#baileypage
+			{
+				background-image: url("images/waterbackground.jpg"); 
+				width:100%;
+				height:1200px;
+				background-repeat:no-repeat; 
+				font-family: 'ZCOOL XiaoWei', serif;
+				color:white;
+				line-height:1.5em;
+				font-size:1.2em;
+				max-width:1300px;
+			}
+		#baileystory1
+			{
+				text-align:justify;
+				width: 70%;
+				margin-right:2%;  
+				margin-top:7%;
+				float:right;
+				padding:10 10 10 10px;   
+			}
+		#baileyimg	
+			{
+				width:20%;
+				float:left;
+				margin-left:5%;
+				margin-top:9%;
+				border:4px solid gray;
+				
+				background-color:black;
+			}
 		
-	}
-footer a:link
-	{
-		color:black;
-	}
-footer a:hover
-	{
-		color:white;
-	}
-#footerleft
-	{
-		float:left;
-		width:340px;
-		margin-left:40px;
-	}
-#footercenter
-	{
-		float:left;
-		width:320px;
-		margin-left:10px; 
-	}
-#footercenterright
-	{
-		width:110px;
-		float:right;
-		margin-top:90px;
-	}
-#footerright
-	{
-		float:right;
-		width:300px; 
-		margin-top:20px;
-		text-align:center;
-	}
-#firstname, #lastname, #email, #message
-	{
-		background-color:#004655;
-		color:white;	
-	}
-.current
-	{
-		font-size:1.2em;
-	}
+		#baileystory2
+			{
+				float:left;
+				padding:10 10 10 10px;   
+			}
+		#fenceimage
+			{
+				border:2px solid gray;
+				border-style:inset;
+				float:right;
+				margin-right:8%;
+				margin-left:2%;
+				margin-top:-2%;
+			}
 
-.dropdowna
-	{
-		cursor: pointer;
-		color:black;
-	}
 
-.dropdown 
-	{
-		position: relative;
-		display: inline-block;
-	}
+													/*////// readers pages //////  */
 
-.dropdown-content 
-	{
-		display: none;    /* Dropdown Content (Hidden by Default) */
-		position: absolute;
-		background-color: gray;
-		width:230px;
-		min-width: 160px;
-		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-		z-index:4;
-		color:black;
-		border-radius:5px;
-		font-size:.8m;
-	}
 
-.dropdown-content a 
-	{
-		color: black;    /* Links inside the dropdown */
-		padding: 12px 16px;
-		text-decoration: none;
-		font-size:.8em;
-		display: block; 
-		width:220px;
-		line-height:110%;
-	}
+		#readersPage
+			{
+				background-image: url("images/waterbackgroundmedium.jpg"); 
+				width:100%;
+				height:1080px;
+				background-repeat:no-repeat; 
+				font-family: 'ZCOOL XiaoWei', serif;
+				color:white;max-width:1300px;
+			}
+		.slider9
+			{
+				width:82%;
+				height:24%;
+				float:left;
+				margin-top:10%;
+				margin-left:9%; 
+				background-color:transparent;
+				border:1px solid white;
+				padding-right:2%;
+			}
+		.slider9 img
+			{
+				width:200px;
+				height:200px;
+				padding-left:-25%;
+			}
+		.slider11 {display:none;}  /*do not display the smaller slider in full size screens */
+		#slider9title
+			{
+				background-color:#3f6a8f;
+				position:relative;
+				top:4%;
+				left:5%;
+				width:26%;
+				color:white;
+				height:5%;
+				opacity:.7;
+				border-radius:2px;
+				text-align:center;
+				padding-top:1%;
+				font-size:1em;
+			}	
+		#hikingchick21small
+			{
+				
+			}
+		#readersPageP
+			{
+				font-family: 'ZCOOL XiaoWei', serif;
+				background-color:#3f6a8f;
+				color:white;
+				width:35%;
+				line-height:1.5em;
+				position:relative;
+				z-index:1;
+				margin-left:3%;
+				margin-top:8%;
+				text-align:justify;
+				padding:2%;
+				float:left;
+				opacity:.8;
+				border-radius:2px;
+			}
+		#readersPageP h2
+			{
+				text-align:center;
+			}
+		#readersPageP p
+			{
+				margin-left:9%;font-size:1.2em;
+			}
+		#readersPageForm
+			{
+				margin-top:50px;
+				float:left;
+				width:500px;
+				height:500px;
+				margin-left:40px; 
+				text-align:left;
+				padding:20px; 
+			}
+		/*#readerssubmissions
+			{
+				width:1000px;
+				float:right;  
+				text-align:center;
+				margin-top:50px;
+			}	*/
+		#name, #postTitle, #postContent, #readersemail
+			{
+				background-color:white;
+				color:black;
+			}
+		#hiking #name, #postContent
+			{
+				background-color:white;
+				color:black;
+				/*this is here to prevent green backgrounds in the form in hikers pages*/
+			}
+		.error
+			{				
+				color:red;
+				width:800px;
+				position:absolute;
+				top:0%;
+				left:4%;
+			}
 
-.dropdown-content a:hover 
-	{
-		width:220px;
-	}
-
-.dropdown:hover .dropdown-content
-	{
-		display: block;   /* Show the dropdown menu on hover */
 		
+		
+															/*//////evas form/////// */
+		#evasForm
+			{
+				
+			}
+		#portfolioform
+			{
+				width:500px;
+				float:right;
+				margin-top:10px;
+				margin-right:50px;
+			}
+		#readersimageform
+			{
+				margin-top:20px;
+				width:500px;
+				float:left;
+				margin-left:20px;
+			}
+		#removemountainimageform		
+			{
+
+				width:500px;
+				height:200px;
+				float:right;
+				margin-right:100px;
+			}
+		#removetreeimageform
+			{
+				width:500px;
+				height:200px;
+				float:left;
+				margin-left:20px;
+			}
+		#removecloudimageform		
+			{
+				width:500px;
+				height:200px;
+				float:right;
+				margin-right:100px;
+			}
+		#removefungiimageform
+			{
+				width:500px;
+				height:200px;
+				float:left;
+				margin-left:20px;
+			}	
+		#removeleavesimageform		
+			{
+				width:500px;
+				height:200px;
+				float:right;
+				margin-right:100px;
+			}	
+		#removerocksimageform
+			{
+				width:500px;
+				height:200px;
+				float:left;
+				margin-left:20px;
+			}
+		#removeotherimageform		
+			{
+				width:500px;
+				height:200px;
+				float:right;
+				margin-right:100px;
+			}	
+		#removefoodimageform
+			{
+				width:500px;
+				height:200px;
+				float:left;
+				margin-left:20px;
+			}
+		#recipeform		
+			{
+				width:475px;
+				height:200px;
+				float:right;
+				margin-right:50px; 
+				padding:10px;
+				margin-top:20px;
+			}
+		#hikersform
+			{
+				width:500px;
+				height:600px;
+				float:left;
+				margin-left:20px;
+			}
+		#removehiker		
+			{
+				width:450px;
+				height:100px;
+				float:left;
+				margin-left:80px; 
+				margin-top:-20px;
+			}
+		#recipeedit		
+			{
+				position:relative;
+				width:450px;
+				
+				float:left;
+				margin-left:-460px;
+				margin-top:550px;
+				
+			}
+
+
+															/*////// faces in food ///////   */
+
+		#facesInFood
+			{
+				background-image: url("images/abstractwaterbackground.jpg");
+				background-repeat:no-repeat;
+				height:100%;
+				color:white;
+				margin-top:;
+				padding-top:5%;
+				font-family: 'ZCOOL XiaoWei', serif;
+				max-width:1300px;
+				max-height:900px;overflow:scroll;
+			}
+		.slider10
+			{
+				width:65%;
+				height:45%;
+				
+				float:left;
+				margin-top:2%;
+				margin-left:15%; 
+			}
+		.slider10 img
+			{
+				width:350px;
+				max-height:420px;
+				padding:6px;
+				background-color:gray;
+			}
+		#slider10recipe
+			{
+				color:white;
+				float:right;
+				position:absolute;
+				top:00px;
+				left:60%;
+				font-weight:bold;
+				font-size:1.1em;
+				height:100%;
+				max-height:450px;
+				overflow-y: auto;
+				padding:40px;
+				background-color:#3f6a8f;
+				border-radius:2px;
+				opacity:.8;
+			}
+
+		#slider10title
+			{
+				background-color:#3f6a8f;
+				margin-left:30%; 
+				width:40%;
+				color:white;
+				height:10%;
+				opacity:.7;
+				border-radius:2px;
+				text-align:center;
+				padding-top:1%;
+			}
+		#norecipeimage
+			{
+				margin-left:30%; margin-top:10px;
+			}
+
+
+															/*////////  books  /////////*/
+
+
+		
+		#bookbanner
+			{
+				width:90%;
+				
+			}	
+		#coverImg
+			{
+				float:left;
+				margin-top:8%;
+				margin-left:3%;
+			}
+		
+		#book2Img
+			{
+				float:right;
+				margin-top:14%;
+				margin-right:5%;
+				padding-bottom:4%;
+			}
+		#content
+			{
+				font-family: 'ZCOOL XiaoWei', serif;
+				background-image: url("images/EvaWebsiteBGGreenLarge.png"); 
+				height:1420px;
+				margin-top:0%;max-width:1300px;
+			}
+		#paypal
+			{
+				float:right;
+				margin-right:3%; 
+				margin-top:2%;
+				text-align:center; 
+				
+			}
+		#paypal table
+			{
+				margin-left:2%;
+			}
+		#purchaseoptions
+			{
+				margin-left:10%;
+			}
+		#aboutbook
+			{ 
+				float:right;
+				width:40%;
+				font-size:1.1em;
+				margin-top:-6.5%;
+				margin-right:20%;
+				line-height:1.4em; 
+				text-align:justify;
+			}
+		#aboutbook h4 {text-align:left;  line-height:1em;}
+		#authorEvaImg
+			{
+				float:left; 
+				margin-right:5%;
+				border:5px solid gray;
+				border-style: inset;
+			}
+		#aboutEva
+			{
+				float:left;
+				margin-left:2%;
+				width:78%;
+				font-size:1.1em;
+				margin-top:6%;
+				line-height:1.4em;
+				text-align:justify;
+				padding-right:3%;
+				padding-left:3%;
+			}
+		#aboutEva p, h4
+			{
+				margin-top:0%;
+			}
+		#aboutMichelle
+			{
+				float:right;
+				margin-right:1%;
+				width:78%;
+				font-size:1.1em;
+				margin-top:4%;
+				line-height:1.4em;
+				text-align:justify;
+				padding-right:3%;
+				padding-left:3%; 
+			}
+		#aboutMichelleImg
+			{
+				float:right; 
+				margin-left:5%;
+				border:5px solid gray;
+				border-style: inset;
+			}
+		#aboutMichelle p, h4
+			{
+				margin-top:.5%;
+			}
+		#bookisbn
+			{
+				float:right;	
+				width:45%;
+				margin-top:6%;
+				margin-right:15%;
+			}
+		#smallbookimage
+			{
+				
+				float:left;
+				border:5px solid gray;
+				border-style: inset;
+				margin-left:10%;
+				margin-top:3%;
+			}
+													/*//////////    contact ///////////*/
+		#waterbackground
+			{
+				width:100%;
+				height:20%;
+			}
+		.contact
+			{	
+				font-family: 'ZCOOL XiaoWei', serif;
+				text-align:center; 
+				line-height:1.2em;
+				font-size:1.1em;max-width:1300px;
+			}
+		.contact h1
+			{
+				text-align:center;
+				width:25%;
+				margin-left:37.5%;
+				margin-top:5%;
+			}
+		.contact hr
+			{
+				width:20%;
+				border: 5px solid #355a79;
+				border-radius: 5px;
+				color:#bb2b0c;
+			}
+		.contact img
+			{
+				border-radius:50%;
+			}
+		.contact a
+			{
+				color:black;
+			}
+		.contact a:hover
+			{
+				color:darkblue;
+			}
+		
+		#contactemaildiv
+			{
+				width:25%;
+				height:50%;
+				text-align:center;
+				margin-top:5%;
+				margin-left:2%;
+				float:left;
+				border-right:1px solid #b2c4d3;
+				padding-right:2%;
+				padding-bottom:8%;
+			}
+		#contactformdiv
+			{
+				width:35%;
+				float:left;
+				margin-left:3%;
+				margin-top:5%;
+				text-align:left;
+				border-right:1px solid #b2c4d3;
+				padding-right:3%;
+				line-height:.6em;
+			}
+		#contactformdiv form
+			{
+				padding-left:18%;
+			}
+		#contactformdiv h2
+			{
+				text-align:center;
+			}
+		 #contactfirstname, #contactlastname, #contactformdiv #contactemail, #contactmessage
+			{
+				background-color:#355a79;
+				color:white;	 
+				font-weight: bold;
+			}
+		#contacthikelink
+			{
+				width:25%;
+				float:right;
+				margin-top:5%; text-align:center;
+			}
+				
+
+															/*////// footer ////// */
+
+
+		footer 
+			{
+				font-family:'ZCOOL XiaoWei', serif;
+				color: white; 
+				background-color:#355a79;
+				width:100%;max-width:1276px;
+				font-size: 100%; 
+				padding: 15px 15px 15px 10px;
+				/*border:1px solid #999; */
+				-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+				-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+				box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+				line-height:50%; 
+				height:345px; 
+				clear:both;
+			}
+		footer a:link
+			{
+				color: white;
+			}
+		footer a:visited {color:white;}
+		#footerright a:hover
+			{
+				color:black;
+			}
+		
+		#footerleft
+			{
+				float:left;
+				width:340px;
+				margin-left:40px;
+			}
+		#footercenter
+			{
+				float:left;
+				width:320px;
+				margin-left:10px; 
+			}
+		#footercenterright
+			{
+				width:110px;
+				float:right;
+				margin-top:90px;
+			}
+		#footerright
+			{
+				float:right;
+				width:300px; 
+				margin-top:0px;
+				text-align:center;
+			}
+		#firstname, #lastname, #email, #message
+			{
+				background-color:white;
+				color:black;	
+			}
+		.current
+			{
+				font-size:1.2em;
+			}
+
+		.dropdowna
+			{
+				cursor: pointer;
+				color:black;
+			}
+
+		.dropdown 
+			{
+				position: relative;
+				display: inline-block;
+			}
+
+		.dropdown-content 
+			{
+				display: none;    /* Dropdown Content (Hidden by Default) */
+				position: absolute;
+				margin-left:-19%;
+				background-color:white;
+				width:150px;				
+				color:black;
+			    border:1px solid #633d2c; 
+				z-index: 2;  /*this is here so the drop down menu is overlayed on top of other images*/
+			}
+
+		.dropdown-content a 
+			{
+				color: black;    /* Links inside the dropdown */
+				padding-left:12%;
+				padding-bottom:9%;
+				padding-top:8%;
+				text-decoration: none;
+				font-size:.8em;
+				font-weight:bold;
+				display: block; 
+				width:110px;
+				line-height:110%;
+				text-align:center;
+				
+			}
+
+		.dropdown-content a:hover 
+			{
+				width:110px;
+			}
+
+		.dropdown:hover .dropdown-content
+			{
+				display: block;   /* Show the dropdown menu on hover */
+				
+			}
 	}
 
 

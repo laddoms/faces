@@ -16,54 +16,51 @@
     	<link href="styling.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
+<?php include('header.inc.php'); ?>
 <div id="wrapper">	
-	<?php 
-		include('header.inc.php'); ?>
-		<div id="hikesimg">
-			<img src="images/mttombanner.jpg" alt="view from Mt Tom Massachusetts">
-		</div>
+	
 	<div id="readerhike">
-		<div id="hikingnav">
-			<?php include('nav.inc.php'); ?>
-		</div>
 			<?php
 				$hikeName=$_GET['content'];  //the content var is also the name of the hike. But its used it two different ways. See $content below. 
 				$hikeName=ucwords($hikeName);  //turns the first char of each word to upper case
-				echo"<h2>$hikeName</h2>";
-				if(isset($_GET['image'])&&(!empty($_GET['image'])))
-					{
-						$image=$_GET['image'];
-					}
-				
-				$content=$_GET['content'];  
 			
-				echo"<img src=\"./images/hikersimages/$image.jpg\" width=\"290\" height=\"180\">";
-				$content=file_get_contents("./images/hikersimages/$content". ".txt");
+					if(isset($_GET['image'])&&(!empty($_GET['image'])))
+						{
+							$image=$_GET['image'];
+						}
+					
+					$content=$_GET['content'];  
 				
-				//*the following function gets the hikers name from the txt file and returns it. 
-		
-				function getHikersName($content)
-					{
-						$hikerName="Submitted by:";  //find the start of the submitted by string. this is used to find the name.
-						$hikerNamePos = strpos($content, $hikerName);  //remember strpos is zero based. 
-						$description="Description";  //the very next word after hiker name is Description. This will be the ending point of the substr below
-						$descriptionPos = strpos($content, $description);  //this finds the  postion of the word 'Description' in the txt file
-						$name = substr($content, $hikerNamePos, ($descriptionPos - $hikerNamePos)) . "</p>";  //substr is used to get the hikers name. start point is "Submitted by:". End point is the length of the hikers name which is $descriptionPos - $hikerNamePos. 
-						//the substr above actually returns the words "submitted by" in addition to the name. 
-						return $name;
-					}
-				function getDescription($content)
-					{
-						$description=strpos($content, "Description:");
-						$description = substr($content, $description);
-						return $description;
-					}
-				$name = getHikersName($content);
-				$description = getDescription($content);
-				echo "<h2>$name</h2>";
-				echo"<p>$description</p>";
+					echo"<img src=\"./images/hikersimages/$image.jpg\" width=\"290\" height=\"180\" id=\"hikerimage\">";
 				
-			?>
+					$content=file_get_contents("./images/hikersimages/$content". ".txt");
+					
+					//*the following function gets the hikers name from the txt file and returns it. 
+			
+					function getHikersName($content)
+						{
+							$hikerName="Submitted by:";  //find the start of the submitted by string. this is used to find the name.
+							$hikerNamePos = strpos($content, $hikerName);  //remember strpos is zero based. 
+							$description="Description";  //the very next word after hiker name is Description. This will be the ending point of the substr below
+							$descriptionPos = strpos($content, $description);  //this finds the  postion of the word 'Description' in the txt file
+							$name = substr($content, $hikerNamePos, ($descriptionPos - $hikerNamePos)) . "</p>";  //substr is used to get the hikers name. start point is "Submitted by:". End point is the length of the hikers name which is $descriptionPos - $hikerNamePos. 
+							//the substr above actually returns the words "submitted by" in addition to the name. 
+							return $name;
+						}
+					function getDescription($content)
+						{
+							$description=strpos($content, "Description:");
+							$description = substr($content, $description);
+							return $description;
+						}
+					echo"<div id=\"hikename\">";
+						$name = getHikersName($content);
+						$description = getDescription($content);
+						echo"<h2>$hikeName</h2>";
+						echo "<p>$name</p>";
+						echo"<p>$description</p>";
+					echo"</div>";  ?>
+			
 	</div>
 
 

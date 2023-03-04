@@ -6,12 +6,12 @@ function validateSubmit()
 		var lastname =  document.getElementById("lastname").value;
 		var email =  document.getElementById("email").value;
 		var message =  document.getElementById("message").value;
-		if (document.footerForm.firstname.value=="") 
+		if(document.getElementById('firstname').value==0) 
 			{	
 				err=1;
 				alert( "Please enter your first name" );
 			}
-		if (document.footerForm.lastname.value=="")
+		if(document.getElementById('lastname').value==0) 
 			{
 				err=1;
 				alert( "Please enter your last name" );
@@ -21,7 +21,55 @@ function validateSubmit()
 				err=1;
 				alert("please provide your email address");
 			}  
-		if( document.footerForm.message.value == "" )
+		if(document.getElementById('message').value==0) 
+			{
+				alert( "Please provide a message" );
+				err=1;
+			}  
+		if (err==0) 
+			{
+				var alertMessage = "Please Confirm: First Name: " + firstname + "\nLast Name: " + lastname +  "\nEmail Address: "
+				+ email + "\nMessage: " + message;
+				if(confirm(alertMessage)==true)
+					{
+						alert("Thank you for contacting us on " + Date());
+						firstname=undefined;
+						//document.getElementById("footerForm").reset(); 
+					}	
+				else 	
+					{
+						alert("Ok. Please edit the form fields.");
+						document.getElementById('firstname').value='Some Value';
+					}
+				return true;
+			} 
+	}
+
+
+function validateSubmitContact()
+	{
+		var err=0;
+
+		var firstname = document.getElementById("contactfirstname").value;
+		var lastname =  document.getElementById("contactlastname").value;
+		var email =  document.getElementById("contactemail").value;
+		var message =  document.getElementById("contactmessage").value;
+		if(document.getElementById('contactfirstname').value==0) 
+			{	
+				err=1;
+				alert( "Please enter your first name" );
+			}
+		if(document.getElementById('contactlastname').value==0) 
+			{
+				err=1;
+				alert( "Please enter your last name" );
+			}
+		if(document.getElementById('contactemail').value==0) 
+			{
+				err=1;
+				alert("please provide your email address");
+			}  
+		if(document.getElementById('contactmessage').value==0) 
 			{
 				alert( "Please provide a message" );
 				err=1;

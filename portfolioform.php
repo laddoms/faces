@@ -39,7 +39,7 @@
 														}
 													$filepath ="./images/$portfoliosection/{$_FILES['portfolioimage']['name']}"; 
 													$filepath=strtolower($filepath);
-													echo"<p>$filepath</p>";
+													//echo"<p>$filepath</p>";
 													$file=$_FILES['portfolioimage']['name'];
 													$source_properties = getimagesize($filepath);  //getimagesize returns 7 properties of the image. index 0 is width, 1 is height, 2 is type
 																								//3 is height and width in string format. 

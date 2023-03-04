@@ -16,40 +16,34 @@
     	<link href="styling.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-<div id="wrapper">
-	
-		<?php include('header.inc.php'); ?>
-		<div id="greenlakeImg">
-			<img src="images/forestparkarmtree22.jpg" alt="image of a green treed lake">
-		</div>
-		<?php include('nav.inc.php'); ?>
+<?php include('header.inc.php'); ?>
+	<div id="wrapper">
 		<div id="wendyPage">
 			<div id="wendyImg"><img src="images/wendy.jpeg" alt="image of face in tree"></div>
 			<div id="wendystory">
 				<h1>WENDY</h1>
-				<h2>By Donna Omega</h2>
-				<!--h2>May</h2-->
+				<h2>By Donna Liese</h2>
 				<p>Once, there was a little gust of wind named Wendy. She was the size of a starling, and very strong spirited. 
-				She was determined to blow faster than Mother Wind. One day, Wendy blew her strongest, snapping twigs, and whirling 
+				She was determined to blow faster than Mother Wind. 
+				</p>
+				<p>One day, Wendy blew her strongest, snapping twigs, and whirling 
 				them through the air. She exclaimed, “See, I am greater than Mother Wind!” Blinded by envy, and not watching where 
-				she was blowing, she plunged into some soft, green, moss. She bounced back up, frowned, brushed herself off, 
+				she was blowing, she plunged into some soft, green, moss. 
+				<p>She bounced back up, frowned, brushed herself off, 
 				and began blowing once again. “Nothing can keep me down for long,” boasted Wendy. 
 				</p>
 			</div>
 			<div id="wendyfullpage">
 				<p>Dodging small forest trees, 
-				she laughed and said, “By tomorrow, I shall beat Mother Wind in a race. ”Grinning, she pushed herself a little harder, 
+				she laughed and said, “By tomorrow, I shall beat Mother Wind in a race. 
+				<br />”Grinning, she pushed herself a little harder, 
 				closed her tiny eyes, and crashed face first into a tree!
 				</p>
 				<p>To this day, no matter how hard Wendy blows, she remains stuck on the bark of a tree.
 				</p>
 				<p>Will Wendy ever get unstuck from the tree?
 				</p>
-				<div id="turtleimg">
-					<img src="images/turtle.jpg" alt="image of turtle">
-				</div>
-				<p>
-				<!--h2>June</h2-->
+				<img src="images/turtle.jpg" alt="image of turtle" id="turtleimg">
 				<p>One hot, humid day Wendy cried, “I’ll never be free from this tree!” She sputtered a small gust of wind, yawned,
 				and fell fast asleep. Terrance the turtle plodded by, dragging a huge stick. Dripping with sweat, he collapsed and yelled, “Help!” 
 				Wendy’s eyes snapped open, she asked, “What does help mean?”
@@ -88,9 +82,7 @@
 				</p>
 				<p>A tear rolled down Wendy’s cheek. “Just when I thought I’d be free, I’m still stuck to this tree.”
 				  Will Mother Wind return to free Wendy? 
-				<div id="rainierImg">
-					<img src="images/mountains/rainier.jpg" alt="photo of Mount Rainier">
-				</div>
+				
 				<!--h2>July</h2-->
 				<p>Tessa Tornado spun through the forest sounding like an out of control freight train. Falling trees shook the ground, 
 				   and branches ceaselessly whirled overhead. Wendy felt amazingly safe and whispered, “It’s like a giant bubble is 

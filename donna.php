@@ -15,27 +15,44 @@
 		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     	<link href="styling.css" type="text/css" rel="stylesheet" />
 </head>
+<?php include('header.inc.php'); ?>
 <div id="wrapper">
-	<?php include('header.inc.php'); ?>
-		<div id="donnaBackground">
-			<img src="images/skullrockbackground.jpg" alt="photo of child climbing tree">
+	
+	<div id="donnapage">
+		<img src="images/donna.jpg" alt="image of Donna" id="donnaImg"/>
+			 	<div id="donna">
+					<h2>Donna ~ Hiker / Nature Photographer</h2>
+					<p>Hi, my name is Donna Liese and I am a contributor to Explore Faces in Nature. 
+						I was blessed with a childhood surrounded by fields and woods. Every day I was excited to go outdoors and explore. 
+						My mind was filled with wonder, my heart peace and contentment. 
+					</p>
+					<p>	This appreciation of spending time in nature has continued throughout my life. To my surprise, and thanks to my
+					   friend Eva Kealey, I have a new hobby, finding faces in nature! 
+						It’s so much fun to discover one, and bring it to life by creating a story! Remember, there are no limits to our 
+					   imaginations and creativity…Have fun!
+					</p>
+				</div>
+		
+			<div id="donnaphotolarge">
+				<fieldset><legend>Photography by Donna</legend>
+						
+						<img src="images/donna1.JPG" alt="photo of face in nature">
+						<img src="images/donna2.JPG" alt="photo of face in nature">
+						<img src="images/donna3.JPG" alt="photo of face in nature">
+					
+				</fieldset>
+			</div>
+		
+		<div id="photographybydonnaimages"><!--this div is only visible on cell phone sized screens-->
+			<h1>Photography by Donna</h1>	
+			<img src="images/donna1.JPG" alt="photo of face in nature"><br />
+			<img src="images/donna2.JPG" alt="photo of face in nature"><br />
+			<img src="images/donna3.JPG" alt="photo of face in nature">
 		</div>
-	<?php include('nav.inc.php'); ?>
-		<div id="donna">
-			<p>Hi, my name is Donna Omega and I am a contributor to Explore Faces in Nature. </p>
-			<p>	I was blessed with a childhood surrounded by fields and woods. Every day I was excited to go outdoors and explore. 
-				My mind was filled with wonder, my heart peace and contentment. 
-			</p>
-			<p>This appreciation of spending time in nature has continued throughout my life. To my surprise, and thanks to my
-			   friend Eva Kealey, I have a new hobby, finding faces in nature! 
-			</p>
-			<p>It’s so much fun to discover one, and bring it to life by creating a story! Remember, there are no limits to our 
-			   imaginations and creativity…Have fun!
-			</p>
-		</div>
-		<div id="donnaImg"><img src="images/donna.jpg"></div>
-	<?php include('footer.inc.php'); ?>
+	</div>	
 </div>
+	<?php include('footer.inc.php'); ?> 
+
 
 <script src="js/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -49,3 +66,11 @@
 	  });
 	});
 </script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+      <script>
+      $('.slider').slick({
+       infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1
+      });
+      </script>

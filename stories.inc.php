@@ -20,34 +20,29 @@
     	<link href="styling.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
+<?php include('header.inc.php'); ?>
 <div id="wrapper">
 	<div id="creativestories">
-		<?php include('header.inc.php'); ?>
-		<div id="lakeImg">  					 <!--change the name of this div-->
-			<img src="images/tree4.JPG">
-		</div>
-		<div id="storiesnav">
-			<?php include('nav.inc.php'); ?>
-		</div>
-	
 		<div id="stories">
+			<h2>Read our Creative Stories</h2>
 			<div id="wendylink">
-				<a href="thestoryofwendy.inc.php"><img style="margin-left:40px;"src="images/wendymedium.jpg">
-				<p style="margin-left:110px;">Wendy</a></p>
+				<a href="thestoryofwendy.inc.php"><img src="images/wendymedium.jpg">
+				<p>The Story of Wendy</a></p>
 			</div>
 			<div id="mushroomlink">
 				<a href="mushroomstory.inc.php"><img src="images/mushroommedium.jpg">
-				<p style="margin-left:-10px;">Fred the Mushroom</a></p>
+				<p>Fred the Mushroom</a></p>
 			</div>
 			<div id="baileylink">
-				<a href="bailey.inc.php"><img src="images/fencemedium.jpg">
-				<p style="margin-left:50px;">Bailey's Story</a></p>
+				<a href="bailey.inc.php"><img src="images/baileylarge.jpg">
+				<p>Bailey's Story</a></p>
 			</div>
 		</div>	
 	</div>
 
-<?php include('footer.inc.php'); ?>
+
 </div>
+<?php include('footer.inc.php'); ?>
 </body>
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
